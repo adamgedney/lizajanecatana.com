@@ -43,8 +43,7 @@ ul {
 body {
   background: #101010;
   color: #f0f0f0;
-  font: 62.5% 'Droid Serif', serif;
-  font-weight: 100; }
+  font: 62.5% 'Droid Serif', Georgia,Helvetica,Arial,sans-serif; }
 
 h1, h2, h3, h4, nav {
   font-family: 'Tangerine', cursive; }
@@ -61,11 +60,12 @@ h3 {
   font-size: 2.7em;
   line-height: 1.5em; }
 
-p, ul, dl {
+p, ul, dl, label {
   font-size: 1.8em;
   line-height: 1.5em;
   margin-bottom: 20px;
-  font-weight: 100; }
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased; }
 
 a {
   text-decoration: none;
@@ -114,29 +114,27 @@ header {
     border-top: 1px solid #252525;
     text-align: center; }
     header nav ul li :hover {
-      background: #1e89b1; }
+      color: #cd241b; }
     header nav ul li a {
       color: #f0f0f0;
       line-height: 45px;
-      font-size: 1.5em; }
+      font-size: 1.2em; }
 
 .menu-button {
   display: block;
   float: left;
-  padding: 5% 2% 0; }
+  padding: 18px 2% 0; }
 
 .form {
   width: 450px;
-  height: 80%;
-  float: right;
-  padding: 36px 0 63px; }
+  margin: 0 auto; }
   .form form {
-    width: 262px;
+    width: 294px;
     margin: 0 auto;
     overflow: hidden; }
-  .form input {
-    width: 254px;
-    height: 29px;
+  .form input, .form textarea {
+    width: 294px;
+    height: 45px;
     border: none;
     padding: 3px;
     border-radius: 2px;
@@ -144,8 +142,11 @@ header {
     margin-bottom: 12px;
     float: right;
     font-size: 1.8em; }
+  .form textarea {
+    height: 198px; }
   .form input[type=submit] {
-    color: #252525;
+    background: #1e89b1;
+    color: #f0f0f0;
     clear: both;
     height: 45px;
     font-size: 1.8em;
@@ -153,10 +154,10 @@ header {
     float: left;
     margin-top: 18px; }
   .form label {
-    margin-bottom: 0;
-    font-size: 1.6em;
-    line-height: 1.2em;
-    color: #252525;
+    margin-bottom: 3px;
+    font-size: 1.5em;
+    line-height: 1.6em;
+    color: #f0f0f0;
     font-weight: 400;
     display: inline;
     text-align: right;

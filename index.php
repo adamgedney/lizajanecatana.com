@@ -109,15 +109,16 @@ Wolf Neutra Brooklyn, tousled ad assumenda aliqua Odd Future pop-up. Ad ut ea, f
 							<form action="?action=contact" method="post">
 
 								<label for="name">Name*</label>
-								<input type="text" name="name" placeholder="Full Name"/>
+								<input type="text" name="name" placeholder="Full Name" required/>
 
 								<label for="email">Email*</label>
-								<input type="email" name="email" placeholder="you@example.com"/>
+								<input type="email" name="email" placeholder="you@example.com" required/>
 
 								<label for="phone">Phone*</label>
-								<input type="tel" name="phone" placeholder="555-555-1212"/>
+								<input type="tel" name="phone" placeholder="555-555-1212" required/>
 
-								<textarea name="message"></textarea>
+								<label for="message">Message*</label>
+								<textarea name="message" required></textarea>
 
 								<input type="submit" value="Contact Me" />
 

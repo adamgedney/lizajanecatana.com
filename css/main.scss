@@ -65,13 +65,13 @@ header{
 				text-align: center;
 
 				:hover{
-					background: $blue;
+					color: $red;
 				}
 
 				a{
 					color: $white;
 					line-height: 45px;
-					font-size: 1.5em;
+					font-size: 1.2em;
 				}
 			}
 		}
@@ -81,25 +81,22 @@ header{
 .menu-button{
 	display: block;
 	float: left;
-	padding: 5% 2% 0;
+	padding: 18px 2% 0;
 }
 
 .form{
 	width: 450px;
-	height: 80%;
-	// margin: 0 auto;
-	float: right;
-	padding: 36px 0 63px;
+	margin: 0 auto;
 
 	form{
-		width: 262px;
+		width: 294px;
 		margin: 0 auto;
 		overflow: hidden;
 	}
 
-		input{
-			width: 254px;
-			height: 29px;
+		input, textarea{
+			width: 294px;
+			height: 45px;
 			border: none;
 			padding: 3px;
 			border-radius: 2px;
@@ -110,8 +107,13 @@ header{
 			// color: $light-gray;
 		}
 
+		textarea{
+			height: 198px;
+		}
+
 		input[type=submit]{
-			color: $dark-grey;
+			background: $blue;
+			color: $white;
 			clear: both;
 			height: 45px;
 			font-size: 1.8em;
@@ -123,10 +125,10 @@ header{
 
 		label{
 			// margin-left: 10px;
-			margin-bottom: 0;
-			font-size: 1.6em;
-			line-height: 1.2em;
-			color: $dark-grey;
+			margin-bottom: 3px;
+			font-size: 1.5em;
+			line-height: 1.6em;
+			color: $white;
 			font-weight: 400;
 			display: inline;
 			text-align: right;

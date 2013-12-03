@@ -11,9 +11,10 @@
 body{
 background: $black;
 color: $white;
-font: 62.5% 'Droid Serif', serif;
-font-weight: 100;
+font: 62.5% 'Droid Serif', Georgia,Helvetica,Arial,sans-serif;
 }
+
+
 
 h1,h2,h3,h4, nav{
 	font-family: 'Tangerine', cursive;
@@ -34,11 +35,12 @@ font-size: 2.7em;
 line-height: 1.5em;
 }
 
-p, ul, dl{
+p, ul, dl, label{
 font-size: 1.8em;
 line-height: 1.5em;
 margin-bottom: 20px;
 font-weight: 100;
+-webkit-font-smoothing: antialiased;
 }
 
 a{
