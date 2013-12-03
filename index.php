@@ -53,46 +53,104 @@
 
 		</header>
 
-			<div class="container">
+			
+
 				<div class="page landing">
+
+
 					<div class="page-inner">
-						
+
+						<div class="scene">
+
+							<img id="fog-right" src="/images/scene/4-rightInnerFog.png" alt="scene layer"/>
+								<img id="fog-left" src="/images/scene/5-leftInnerFog.png" alt="scene layer"/>
+
+							<div class="scene-inner">
+								<img src="/images/scene/1-rearCurtain.png" alt="scene layer"/>
+								<img src="/images/scene/2-chandShadow.png" alt="scene layer"/>
+								<img src="/images/scene/3-chand.png" alt="scene layer"/>
+								
+								
+								
+								<img src="/images/scene/6-singerShadow.png" alt="scene layer"/>
+								<img src="/images/scene/7-singer.png" alt="scene layer"/>
+							</div><!-- /.scene-inner-->
+
+							<div id="curtain-wrapper">
+								<img id="curtain-left" src="/images/scene/8a-curtainLeft.png" alt="scene layer"/>
+									<div id="curtain-center"></div>
+								<img id="curtain-right" src="/images/scene/8b-curtainRight.png" alt="scene layer"/>
+							</div><!-- /#curtain-wrapper-->
+
+							<img id="center-fog" src="/images/scene/9-outerFog.png" alt="scene layer"/>
+
+						</div><!-- /.scene-->
+
 					</div><!-- /.page-inner-->
 				</div><!-- /.page-->
 
 
+
+
+			<div class="container">
 				<div class="page bio">
 					<div class="page-inner">
+
+						
 						<h2 id="bio">Bio</h2>
+						<img class="ornament" src="/images/ornament.png" alt="page ornament" />
 							<p>Ugh mustache Williamsburg, keytar irony ethnic non wolf viral Etsy Portland hashtag. Cillum fanny pack mumblecore cliche, culpa seitan ad ugh velit anim. Terry Richardson Cosby sweater Marfa, iPhone placeat narwhal yr wayfarers pour-over tousled labore retro literally. Occaecat cliche squid, voluptate cillum ex ethnic odio dolor Odd Future sunt church-key cornhole try-hard. Gastropub distillery commodo tattooed paleo. Sustainable Echo Park farm-to-table kogi, Pitchfork Williamsburg reprehenderit. Asymmetrical minim nulla, mustache sunt keffiyeh before they sold out chillwave cliche food truck.
 
-Wolf Neutra Brooklyn, tousled ad assumenda aliqua Odd Future pop-up. Ad ut ea, fixie Truffaut High Life locavore pug 90's umami keffiyeh narwhal exercitation. Hella flexitarian chia blog Pitchfork. Quinoa art party direct trade, asymmetrical roof party banjo 8-bit </p>
+								Wolf Neutra Brooklyn, tousled ad assumenda aliqua Odd Future pop-up. Ad ut ea, fixie Truffaut High Life locavore pug 90's umami keffiyeh narwhal exercitation. Hella flexitarian chia blog Pitchfork. Quinoa art party direct trade, asymmetrical roof party banjo 8-bit </p>
 
 					</div><!-- /.page-inner-->
 				</div><!-- /.page-->
 
 				<div class="page videos">
 					<div class="page-inner">
+
+						
 						<h2 id="videos">Videos</h2>
+						<img class="ornament" src="/images/ornament.png" alt="page ornament" />
 
-							<iframe width="420" height="315" src="//www.youtube.com/embed/cbx63WM5Wus" frameborder="0" allowfullscreen></iframe>
+						<div class="video-wrapper">
+							<iframe src="//www.youtube.com/embed/cbx63WM5Wus" frameborder="0" allowfullscreen></iframe>
+							<h3>Song Title</h3>
+						</div><!-- /.video-wrapper-->
 
-							<iframe width="420" height="315" src="//www.youtube.com/embed/cbx63WM5Wus" frameborder="0" allowfullscreen></iframe>
+						<div class="video-wrapper">
+							<iframe src="//www.youtube.com/embed/cbx63WM5Wus" frameborder="0" allowfullscreen></iframe>
+							<h3>Song Title</h3>
+						</div><!-- /.video-wrapper-->
 
-							<iframe width="420" height="315" src="//www.youtube.com/embed/cbx63WM5Wus" frameborder="0" allowfullscreen></iframe>
+						<div class="video-wrapper">
+							<iframe src="//www.youtube.com/embed/cbx63WM5Wus" frameborder="0" allowfullscreen></iframe>
+							<h3>Song Title</h3>
+						</div><!-- /.video-wrapper-->
 
-							<iframe width="420" height="315" src="//www.youtube.com/embed/cbx63WM5Wus" frameborder="0" allowfullscreen></iframe>
+						<div class="video-wrapper">
+							<iframe src="//www.youtube.com/embed/cbx63WM5Wus" frameborder="0" allowfullscreen></iframe>
+							<h3>Song Title</h3>
+						</div><!-- /.video-wrapper-->
 
-							<iframe width="420" height="315" src="//www.youtube.com/embed/cbx63WM5Wus" frameborder="0" allowfullscreen></iframe>
+						<div class="video-wrapper">
+							<iframe src="//www.youtube.com/embed/cbx63WM5Wus" frameborder="0" allowfullscreen></iframe>
+							<h3>Song Title</h3>
+						</div><!-- /.video-wrapper-->
 
-							<iframe width="420" height="315" src="//www.youtube.com/embed/cbx63WM5Wus" frameborder="0" allowfullscreen></iframe>
-
+						<div class="video-wrapper">
+							<iframe src="//www.youtube.com/embed/cbx63WM5Wus" frameborder="0" allowfullscreen></iframe>
+							<h3>Song Title</h3>
+						</div><!-- /.video-wrapper-->
 					</div><!-- /.page-inner-->
 				</div><!-- /.page-->
 
 				<div class="page photos slow-jump">
 					<div class="page-inner">
+
+						
 						<h2 id="photos">Photos</h2>
+						<img class="ornament" src="/images/ornament.png" alt="page ornament" />
 
 						<div class="picasa" id="gallery">
 				        	<embed type="application/x-shockwave-flash" src="https://static.googleusercontent.com/external_content/picasaweb.googleusercontent.com/slideshow.swf" width="100%" height="100%" flashvars="host=picasaweb.google.com&hl=en_US&feat=flashalbum&RGB=0x000000&feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2F112323008573640601447%2Falbumid%2F5943929266358395361%3Falt%3Drss%26kind%3Dphoto%26hl%3Den_US" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
@@ -103,7 +161,10 @@ Wolf Neutra Brooklyn, tousled ad assumenda aliqua Odd Future pop-up. Ad ut ea, f
 
 				<div class="page contact slow-jump">
 					<div class="page-inner">
+
+
 						<h2 id="contact">Contact</h2>
+						<img class="ornament" src="/images/ornament.png" alt="page ornament" />
 
 						<div class="form">
 							<form action="?action=contact" method="post">
@@ -130,7 +191,7 @@ Wolf Neutra Brooklyn, tousled ad assumenda aliqua Odd Future pop-up. Ad ut ea, f
 			</div><!-- /.container-->	
 
 		<footer>
-		<p><span class="red">&copy;2013</span> LizaJaneCatana.com</p>
+			<p><span class="red">&copy;2013</span> LizaJaneCatana.com</p>
 		</footer>
 		<!-- Scripts -->
 

@@ -61,17 +61,20 @@ h3 {
   line-height: 1.5em; }
 
 p, ul, dl, label {
-  font-size: 1.8em;
+  font-size: 1.6em;
   line-height: 1.5em;
   margin-bottom: 20px;
   font-weight: 100;
+  -webkit-font-smoothing: antialiased; }
+
+input {
   -webkit-font-smoothing: antialiased; }
 
 a {
   text-decoration: none;
   color: #1e89b1; }
 
-a:hover {
+a:hover, input[type=submit]:hover {
   opacity: .6; }
 
 ::-webkit-input-placeholder {
@@ -90,8 +93,14 @@ a:hover {
   /* Internet Explorer 10+ */
   color: #7f7f7f; }
 
+img, iframe {
+  max-width: 100%; }
+
 .container {
-  padding: 0 2%; }
+  padding: 0 4%; }
+
+.red {
+  color: #cd241b; }
 
 /* #Media Queries
 ================================================== */
@@ -100,12 +109,17 @@ Grabbed from Chris Coyer.
 http://css-tricks.com/snippets/css/media-queries-for-standard-devices/
 */
 /* Smartphones (portrait and landscape) ----------- */
+.menu-button {
+  display: block;
+  position: fixed;
+  right: 9px;
+  top: 18px;
+  opacity: .8; }
+
 header {
-  border-top: 3px solid #cd241b;
+  border-top: 3px solid #490406;
   overflow: hidden; }
   header h1 {
-    display: inline;
-    margin: 0 auto;
     text-align: center;
     font-size: 4.2em;
     padding: 2%; }
@@ -120,13 +134,91 @@ header {
       line-height: 45px;
       font-size: 1.2em; }
 
-.menu-button {
-  display: block;
-  float: left;
-  padding: 18px 2% 0; }
+.landing {
+  width: 100%; }
 
+/* ----------------Landing page scene----------------*/
+.scene {
+  height: 297px;
+  position: relative; }
+  .scene .scene-inner {
+    max-width: 862px;
+    margin: 0 auto; }
+  .scene img {
+    position: absolute;
+    top: 0;
+    display: block;
+    height: auto; }
+
+#curtain-wrapper {
+  width: 100%;
+  min-width: 837px;
+  max-height: 620px;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  display: none; }
+
+#curtain-left, #fog-left {
+  position: absolute;
+  left: 0;
+  max-width: 100%;
+  max-height: 620px; }
+
+#curtain-right, #fog-right {
+  position: absolute;
+  right: 0;
+  max-width: 100%;
+  max-height: 620px; }
+
+#curtain-center {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  min-width: 100%;
+  min-height: 620px;
+  margin: 0 auto;
+  background: url(../images/scene/8c-curtainCenter.png) repeat; }
+
+#center-fog {
+  position: absolute;
+  width: 100%;
+  max-height: 620px;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.ornament {
+  display: block;
+  width: 150px;
+  max-height: 19px;
+  margin: 0 auto 18px;
+  text-align: center; }
+
+h2 {
+  line-height: .8em;
+  margin-top: 72px;
+  margin-bottom: 0;
+  text-align: center; }
+
+.videos {
+  overflow: hidden; }
+  .videos .video-wrapper {
+    float: left;
+    margin-right: 2%; }
+    .videos .video-wrapper iframe {
+      display: inline-block;
+      text-align: center;
+      width: 420px;
+      height: 315px; }
+    .videos .video-wrapper h3 {
+      text-align: center;
+      margin-top: 9px;
+      margin-bottom: 36px; }
+
+/*---------------- Contact form----------------*/
 .form {
-  width: 450px;
+  width: 294px;
   margin: 0 auto; }
   .form form {
     width: 294px;
@@ -154,7 +246,7 @@ header {
     float: left;
     margin-top: 18px; }
   .form label {
-    margin-bottom: 3px;
+    margin-bottom: 0;
     font-size: 1.5em;
     line-height: 1.6em;
     color: #f0f0f0;
@@ -163,13 +255,27 @@ header {
     text-align: right;
     float: left; }
 
+footer {
+  margin-top: 72px; }
+  footer p {
+    font-size: 1.2em;
+    text-align: center; }
+
 /* Smartphones  ----------- */
+@media only screen and (min-width: 480px) {
+  .scene {
+    height: 360px; } }
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 320px) {
   /* Styles */ }
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* Styles */ }
+@media only screen and (min-width: 768px) {
+  .scene {
+    height: 620px; }
+
+  #curtain-wrapper {
+    display: block; } }
+/*min-width 768*/
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   /* Styles */ }

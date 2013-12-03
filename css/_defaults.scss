@@ -36,10 +36,14 @@ line-height: 1.5em;
 }
 
 p, ul, dl, label{
-font-size: 1.8em;
+font-size: 1.6em;
 line-height: 1.5em;
 margin-bottom: 20px;
 font-weight: 100;
+-webkit-font-smoothing: antialiased;
+}
+
+input{
 -webkit-font-smoothing: antialiased;
 }
 
@@ -48,7 +52,7 @@ text-decoration: none;
 color: $blue;
 }
 
-a:hover{
+a:hover, input[type=submit]:hover{
 	opacity: .6;
 }
 
@@ -65,11 +69,17 @@ a:hover{
     color: $grey;
 }
 
-.container{
-	padding: 0 2%;
+img, iframe{
+	max-width: 100%;
 }
 
+.container{
+	padding: 0 4%;
+}
 
+.red{
+	color: $red;
+}
 
 
 
