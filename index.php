@@ -27,11 +27,8 @@
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="css/animate.css" />
-	<link rel="stylesheet" href="css/responsive-gs-12col.css" /><!-- resopnsive.gs grid system -->
-	<link rel="stylesheet" href="css/ie.css" /><!-- resopnsive.gs grid system -->
+	<link rel="stylesheet" href="css/jquery.sidr.dark.css" />
 
-	<link href="fancyBox/jquery.fancybox.css?v=2.0.5" rel="stylesheet" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/jquery.picasagallery.css">
 	<link href="./fancyBox/helpers/jquery.fancybox-thumbs.css?v=2.0.5" rel="stylesheet" type="text/css" media="screen" />
 	<link rel="stylesheet" href="css/main.css" />
 
@@ -41,7 +38,9 @@
 		<header>
 			<h1>Liza Jane Catana</h1>
 
-			<nav>
+			<a class="menu-button" href="#sidr" ><img src="/images/menu.png" alt="menu button"/></a>
+
+			<nav id="sidr">
 				<ul>
 					<li><a class="slow-jump" href="#bio">Bio</a></li>
 					<li><a class="slow-jump" href="#videos">Videos</a></li>
@@ -49,6 +48,8 @@
 					<li><a class="slow-jump" href="#contact">Contact</a></li>
 				</ul>
 			</nav>
+
+
 		</header>
 
 			<div class="container">
@@ -105,7 +106,7 @@ Wolf Neutra Brooklyn, tousled ad assumenda aliqua Odd Future pop-up. Ad ut ea, f
 
 						<div class="form">
 							<form action="?action=contact" method="post">
-							
+
 								<label for="name">Name*</label>
 								<input type="text" name="name" placeholder="Full Name"/>
 
@@ -133,10 +134,11 @@ Wolf Neutra Brooklyn, tousled ad assumenda aliqua Odd Future pop-up. Ad ut ea, f
 
 		<script src="js/jquery-1.7.1.js"></script>
 		<!-- // <script src="js/jquery-1.10.2.min.js"></script> -->
-		<script src="js/jquery.event.special.js"></script>
-  		<script src="js/jquery.easing.min.js"></script>
-  		<script src="js/jquery.scrollsnap.js"></script>
+		<script src="js/jquery.sidr.min.js"></script>
 
+		 <!-- <script src="js/jquery.event.special.js"></script>
+  		<script src="js/jquery.easing.min.js"></script>
+  		<script src="js/jquery.scrollsnap.js"></script> -->
 		<script src="js/main-ck.js"></script>
 		
 	</body>

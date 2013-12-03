@@ -49,10 +49,13 @@ and (min-width : 321px) {
 header{
 	// padding: 2%;
 	border-top: 3px solid $red;
+	overflow: hidden;
 
 	h1{
-		font-size: 4.2em;
+		display: inline;
+		margin: 0 auto;
 		text-align: center;
+		font-size: 4.2em;
 		padding: 2%;
 	}
 
@@ -77,8 +80,13 @@ header{
 	}
 }
 
+.menu-button{
+	display: block;
+	float: right;
+	padding: 5% 2% 0;
+}
+
 .form{
-	background: $blue;
 	width: 450px;
 	height: 80%;
 	// margin: 0 auto;
@@ -105,7 +113,7 @@ header{
 		}
 
 		input[type=submit]{
-			color: $dark-gray;
+			color: $dark-grey;
 			clear: both;
 			height: 45px;
 			font-size: 1.8em;
@@ -120,7 +128,7 @@ header{
 			margin-bottom: 0;
 			font-size: 1.6em;
 			line-height: 1.2em;
-			color: $dark-gray;
+			color: $dark-grey;
 			font-weight: 400;
 			display: inline;
 			text-align: right;

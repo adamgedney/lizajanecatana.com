@@ -16,15 +16,20 @@ $('html,body').animate({scrollTop: $(id).offset().top}, 3000, 'easeOutQuint');
 };
 
 
-//-------------------------------------------Scrollsnap.js-----------------------------------
-	//https://github.com/benoitpointet/jquery-scrollsnap-plugin/blob/master/index.html
+// //-------------------------------------------Scrollsnap.js-----------------------------------
+// 	//https://github.com/benoitpointet/jquery-scrollsnap-plugin/blob/master/index.html
 
-	$(document).scrollsnap({
-        snaps: '.snap',
-        proximity: 250,
-        easing: 'easeOutQuint'
-        });
+// 	$(document).scrollsnap({
+//         snaps: '.snap',
+//         proximity: 250,
+//         easing: 'easeOutQuint'
+//         });
 
+
+
+//---------------------Sidr slide in menu------------------------
+
+  $('.menu-button').sidr();
 
 
 });// function
