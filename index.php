@@ -84,7 +84,7 @@ Wolf Neutra Brooklyn, tousled ad assumenda aliqua Odd Future pop-up. Ad ut ea, f
 							<iframe width="420" height="315" src="//www.youtube.com/embed/cbx63WM5Wus" frameborder="0" allowfullscreen></iframe>
 
 							<iframe width="420" height="315" src="//www.youtube.com/embed/cbx63WM5Wus" frameborder="0" allowfullscreen></iframe>
-							
+
 					</div><!-- /.page-inner-->
 				</div><!-- /.page-->
 
@@ -102,6 +102,25 @@ Wolf Neutra Brooklyn, tousled ad assumenda aliqua Odd Future pop-up. Ad ut ea, f
 				<div class="page contact slow-jump">
 					<div class="page-inner">
 						<h2>Contact</h2>
+
+						<div class="form">
+							<form action="?action=contact" method="post">
+							
+								<label for="name">Name*</label>
+								<input type="text" name="name" placeholder="Full Name"/>
+
+								<label for="email">Email*</label>
+								<input type="email" name="email" placeholder="you@example.com"/>
+
+								<label for="phone">Phone*</label>
+								<input type="tel" name="phone" placeholder="555-555-1212"/>
+
+								<textarea name="message"></textarea>
+
+								<input type="submit" value="Contact Me" />
+
+							</form>
+						</div><!-- /.form-->
 
 					</div><!-- /.page-inner-->
 				</div><!-- /.page-->	
