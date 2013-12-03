@@ -1,0 +1,135 @@
+/* 	Copyright Adam Gedney 12/2/13
+	contact: adam.gedney@gmail.com
+	http://adamgedney.com
+
+"Good UI design is humble.” – Jono DiCarlo
+
+
+/*Baseline Grid*/
+/*    3px    */
+
+/*----Sass Palette----*/
+$black: #101010;
+$grey: #7f7f7f;
+$dark-grey: #252525;
+$white: #f0f0f0;
+$blue: #1e89b1;
+$red: #cd241b;
+
+/*----Sass imports----*/
+@import "reset";
+@import "defaults";
+
+
+
+
+
+
+
+/* #Media Queries
+================================================== */
+/*
+Grabbed from Chris Coyer.
+http://css-tricks.com/snippets/css/media-queries-for-standard-devices/
+*/
+
+
+/* Smartphones (portrait and landscape) ----------- */
+// @media screen 
+// and (min-device-width : 320px) 
+// and (max-device-width : 480px) {
+
+// }
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+
+
+header{
+	// padding: 2%;
+	border-top: 3px solid $red;
+
+	h1{
+		font-size: 4.2em;
+		text-align: center;
+		padding: 2%;
+	}
+
+	nav{
+		ul{
+			li{
+				height: 44px;
+				border-top: 1px solid $dark-grey;
+				text-align: center;
+
+				:hover{
+					background: $blue;
+				}
+
+				a{
+					color: $white;
+					line-height: 45px;
+					font-size: 1.5em;
+				}
+			}
+		}
+	}
+}
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
+
+
+
+
+
+
+
