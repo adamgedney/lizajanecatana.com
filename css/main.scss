@@ -41,9 +41,7 @@ http://css-tricks.com/snippets/css/media-queries-for-standard-devices/
 
 // }
 
-/* Smartphones (landscape) ----------- */
-@media only screen 
-and (min-width : 321px) {
+
 
 
 header{
@@ -82,7 +80,7 @@ header{
 
 .menu-button{
 	display: block;
-	float: right;
+	float: left;
 	padding: 5% 2% 0;
 }
 
@@ -136,7 +134,15 @@ header{
 		}
 	}
 
-}/*media min-width 321*/
+
+
+
+
+/* Smartphones  ----------- */
+@media only screen 
+and (min-width : 480px) {
+
+}
 
 
 

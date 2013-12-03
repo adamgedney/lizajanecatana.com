@@ -43,7 +43,8 @@ ul {
 body {
   background: #101010;
   color: #f0f0f0;
-  font: 62.5% 'Droid', "Helvetica Neue Light", Helvetica, Arial, sans-serif; }
+  font: 62.5% 'Droid Serif', serif;
+  font-weight: 100; }
 
 h1, h2, h3, h4, nav {
   font-family: 'Tangerine', cursive; }
@@ -99,70 +100,69 @@ Grabbed from Chris Coyer.
 http://css-tricks.com/snippets/css/media-queries-for-standard-devices/
 */
 /* Smartphones (portrait and landscape) ----------- */
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width: 321px) {
-  header {
-    border-top: 3px solid #cd241b;
+header {
+  border-top: 3px solid #cd241b;
+  overflow: hidden; }
+  header h1 {
+    display: inline;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 4.2em;
+    padding: 2%; }
+  header nav ul li {
+    height: 44px;
+    border-top: 1px solid #252525;
+    text-align: center; }
+    header nav ul li :hover {
+      background: #1e89b1; }
+    header nav ul li a {
+      color: #f0f0f0;
+      line-height: 45px;
+      font-size: 1.5em; }
+
+.menu-button {
+  display: block;
+  float: left;
+  padding: 5% 2% 0; }
+
+.form {
+  width: 450px;
+  height: 80%;
+  float: right;
+  padding: 36px 0 63px; }
+  .form form {
+    width: 262px;
+    margin: 0 auto;
     overflow: hidden; }
-    header h1 {
-      display: inline;
-      margin: 0 auto;
-      text-align: center;
-      font-size: 4.2em;
-      padding: 2%; }
-    header nav ul li {
-      height: 44px;
-      border-top: 1px solid #252525;
-      text-align: center; }
-      header nav ul li :hover {
-        background: #1e89b1; }
-      header nav ul li a {
-        color: #f0f0f0;
-        line-height: 45px;
-        font-size: 1.5em; }
-
-  .menu-button {
-    display: block;
+  .form input {
+    width: 254px;
+    height: 29px;
+    border: none;
+    padding: 3px;
+    border-radius: 2px;
+    display: inline;
+    margin-bottom: 12px;
     float: right;
-    padding: 5% 2% 0; }
+    font-size: 1.8em; }
+  .form input[type=submit] {
+    color: #252525;
+    clear: both;
+    height: 45px;
+    font-size: 1.8em;
+    border-radius: none;
+    float: left;
+    margin-top: 18px; }
+  .form label {
+    margin-bottom: 0;
+    font-size: 1.6em;
+    line-height: 1.2em;
+    color: #252525;
+    font-weight: 400;
+    display: inline;
+    text-align: right;
+    float: left; }
 
-  .form {
-    width: 450px;
-    height: 80%;
-    float: right;
-    padding: 36px 0 63px; }
-    .form form {
-      width: 262px;
-      margin: 0 auto;
-      overflow: hidden; }
-    .form input {
-      width: 254px;
-      height: 29px;
-      border: none;
-      padding: 3px;
-      border-radius: 2px;
-      display: inline;
-      margin-bottom: 12px;
-      float: right;
-      font-size: 1.8em; }
-    .form input[type=submit] {
-      color: #252525;
-      clear: both;
-      height: 45px;
-      font-size: 1.8em;
-      border-radius: none;
-      float: left;
-      margin-top: 18px; }
-    .form label {
-      margin-bottom: 0;
-      font-size: 1.6em;
-      line-height: 1.2em;
-      color: #252525;
-      font-weight: 400;
-      display: inline;
-      text-align: right;
-      float: left; } }
-/*media min-width 321*/
+/* Smartphones  ----------- */
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 320px) {
   /* Styles */ }

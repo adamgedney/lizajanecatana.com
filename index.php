@@ -38,17 +38,18 @@
 		<header>
 			<h1>Liza Jane Catana</h1>
 
-			<a class="menu-button" href="#sidr" ><img src="/images/menu.png" alt="menu button"/></a>
+			<a class="menu-button" id="menu" href="#sidr" ><img src="/images/menu.png" alt="menu button"/></a>
 
-			<nav id="sidr">
-				<ul>
-					<li><a class="slow-jump" href="#bio">Bio</a></li>
-					<li><a class="slow-jump" href="#videos">Videos</a></li>
-					<li><a class="slow-jump" href="#photos">Photos</a></li>
-					<li><a class="slow-jump" href="#contact">Contact</a></li>
-				</ul>
-			</nav>
-
+			<div id="sidr">
+				<nav>
+					<ul>
+						<li><a class="slow-jump" id="bio-nav" href="#bio">Bio</a></li>
+						<li><a class="slow-jump" href="#videos">Videos</a></li>
+						<li><a class="slow-jump" href="#photos">Photos</a></li>
+						<li><a class="slow-jump" href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div> <!-- /#sidr-->
 
 		</header>
 
@@ -62,7 +63,7 @@
 
 				<div class="page bio">
 					<div class="page-inner">
-						<h2>Bio</h2>
+						<h2 id="bio">Bio</h2>
 							<p>Ugh mustache Williamsburg, keytar irony ethnic non wolf viral Etsy Portland hashtag. Cillum fanny pack mumblecore cliche, culpa seitan ad ugh velit anim. Terry Richardson Cosby sweater Marfa, iPhone placeat narwhal yr wayfarers pour-over tousled labore retro literally. Occaecat cliche squid, voluptate cillum ex ethnic odio dolor Odd Future sunt church-key cornhole try-hard. Gastropub distillery commodo tattooed paleo. Sustainable Echo Park farm-to-table kogi, Pitchfork Williamsburg reprehenderit. Asymmetrical minim nulla, mustache sunt keffiyeh before they sold out chillwave cliche food truck.
 
 Wolf Neutra Brooklyn, tousled ad assumenda aliqua Odd Future pop-up. Ad ut ea, fixie Truffaut High Life locavore pug 90's umami keffiyeh narwhal exercitation. Hella flexitarian chia blog Pitchfork. Quinoa art party direct trade, asymmetrical roof party banjo 8-bit </p>
@@ -72,7 +73,7 @@ Wolf Neutra Brooklyn, tousled ad assumenda aliqua Odd Future pop-up. Ad ut ea, f
 
 				<div class="page videos">
 					<div class="page-inner">
-						<h2>Videos</h2>
+						<h2 id="videos">Videos</h2>
 
 							<iframe width="420" height="315" src="//www.youtube.com/embed/cbx63WM5Wus" frameborder="0" allowfullscreen></iframe>
 
@@ -91,7 +92,7 @@ Wolf Neutra Brooklyn, tousled ad assumenda aliqua Odd Future pop-up. Ad ut ea, f
 
 				<div class="page photos slow-jump">
 					<div class="page-inner">
-						<h2>Photos</h2>
+						<h2 id="photos">Photos</h2>
 
 						<div class="picasa" id="gallery">
 				        	<embed type="application/x-shockwave-flash" src="https://static.googleusercontent.com/external_content/picasaweb.googleusercontent.com/slideshow.swf" width="100%" height="100%" flashvars="host=picasaweb.google.com&hl=en_US&feat=flashalbum&RGB=0x000000&feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2F112323008573640601447%2Falbumid%2F5943929266358395361%3Falt%3Drss%26kind%3Dphoto%26hl%3Den_US" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
@@ -102,7 +103,7 @@ Wolf Neutra Brooklyn, tousled ad assumenda aliqua Odd Future pop-up. Ad ut ea, f
 
 				<div class="page contact slow-jump">
 					<div class="page-inner">
-						<h2>Contact</h2>
+						<h2 id="contact">Contact</h2>
 
 						<div class="form">
 							<form action="?action=contact" method="post">
@@ -132,14 +133,15 @@ Wolf Neutra Brooklyn, tousled ad assumenda aliqua Odd Future pop-up. Ad ut ea, f
 		</footer>
 		<!-- Scripts -->
 
-		<script src="js/jquery-1.7.1.js"></script>
-		<!-- // <script src="js/jquery-1.10.2.min.js"></script> -->
+		<!-- // <script src="js/jquery-1.7.1.js"></script> -->
+		<script src="js/jquery-1.10.2.min.js"></script>
 		<script src="js/jquery.sidr.min.js"></script>
+		<script src="js/jquery.touchwipe.min.js"></script>
 
-		 <!-- <script src="js/jquery.event.special.js"></script>
+		 <script src="js/jquery.event.special.js"></script>
   		<script src="js/jquery.easing.min.js"></script>
-  		<script src="js/jquery.scrollsnap.js"></script> -->
-		<script src="js/main-ck.js"></script>
+  		<!-- <script src="js/jquery.scrollsnap.js"></script> -->
+		<script src="js/main.js"></script>
 		
 	</body>
 </html>
