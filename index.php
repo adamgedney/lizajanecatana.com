@@ -99,9 +99,17 @@
 						
 						<h2 id="bio">Bio</h2>
 						<img class="ornament" src="/images/ornament.png" alt="page ornament" />
-							<p>Ugh mustache Williamsburg, keytar irony ethnic non wolf viral Etsy Portland hashtag. Cillum fanny pack mumblecore cliche, culpa seitan ad ugh velit anim. Terry Richardson Cosby sweater Marfa, iPhone placeat narwhal yr wayfarers pour-over tousled labore retro literally. Occaecat cliche squid, voluptate cillum ex ethnic odio dolor Odd Future sunt church-key cornhole try-hard. Gastropub distillery commodo tattooed paleo. Sustainable Echo Park farm-to-table kogi, Pitchfork Williamsburg reprehenderit. Asymmetrical minim nulla, mustache sunt keffiyeh before they sold out chillwave cliche food truck.
+							<p>Liza Jane Catana is a petite singer with a big voice. She hails from Key West, Florida and is known as the knock-it-out-of-the-park soprano with a vocal range of an octave and a half.</p>
 
-								Wolf Neutra Brooklyn, tousled ad assumenda aliqua Odd Future pop-up. Ad ut ea, fixie Truffaut High Life locavore pug 90's umami keffiyeh narwhal exercitation. Hella flexitarian chia blog Pitchfork. Quinoa art party direct trade, asymmetrical roof party banjo 8-bit </p>
+							<p>She has been singing opera since the age of 4 and is known for her rock opera techniques. Her style and preferences are classical music mixed with rock and current pop with a hint of blues.</p> 
+
+							<p>She has performed the national anthem many times at local events and has received a number of awards and accolades. Liza was the only soprano to win the ACDA (American Choral Director Association) honor choir position in all of Monroe county. Only 100 students are selected out of thousands that audition.</p>
+
+							<p>At age 11, Liza was the youngest person ever to sing at the Historical Saint Paul's Church on Duval Street in Key West, Florida and was asked to perform again at age 12.</p> 
+
+							<p>Classically trained on the piano and self-taught guitar player, Liza writes her own songs and has recorded in New York City with Clinton Curtis at Threshold Studios. Some of her original works have been broadcast on local radio stations.</p> 
+
+							<p>Liza performs locally with a group of stunning female singers called "The Ivories". They have performed at the Ocean Key House, Schooner Wharf, Sloppy Joe's, The Little White House and even opened up for Three Dog Night singing the National Anthem in February of 2013 during Keys Stock. The Ivories have recorded a Christmas album which will be available in December 2013.</p>
 
 					</div><!-- /.page-inner-->
 				</div><!-- /.page-->
@@ -185,6 +193,13 @@
 
 							</form>
 						</div><!-- /.form-->
+
+						<div class="contact-info">
+							
+							<p>For more information, or to contact Liza Jane Catana, please fill in the form to the left or email:</p>
+							<a href="mailto:info@lizajanecatana.com">Info@LizaJaneCatana.com</a>
+
+						</div><!-- /.contact-info-->
 
 					</div><!-- /.page-inner-->
 				</div><!-- /.page-->	

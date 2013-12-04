@@ -17,7 +17,7 @@ font: 62.5% 'Droid Serif', Georgia,Helvetica,Arial,sans-serif;
 
 
 h1,h2,h3,h4, nav{
-	font-family: 'Tangerine', cursive;
+font-family: 'Tangerine', cursive;
 }
 
 h1{
@@ -26,7 +26,7 @@ line-height: 1.5em;
 }
 
 h2{
-font-size: 3.6em;
+font-size: 4.2em;
 line-height: 1.5em;
 }
 
@@ -49,7 +49,7 @@ input{
 
 a{
 text-decoration: none;
-color: $blue;
+color: $purple;
 }
 
 a:hover, input[type=submit]:hover{
@@ -73,9 +73,9 @@ img, iframe{
 	max-width: 100%;
 }
 
-.container{
-	padding: 0 4%;
-}
+// .container{
+// 	padding: 0 4%;
+// }
 
 .red{
 	color: $red;

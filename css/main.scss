@@ -10,10 +10,12 @@
 
 /*----Sass Palette----*/
 $black: #101010;
+$rich-black: #000;
 $grey: #7f7f7f;
 $dark-grey: #252525;
-$white: #f0f0f0;
+$white: #e6e6e6;
 $blue: #1e89b1;
+$purple: #AB14B4;
 $red: #cd241b;
 $dark-red: #490406;
 
@@ -33,25 +35,21 @@ $dark-red: #490406;
 Grabbed from Chris Coyer.
 http://css-tricks.com/snippets/css/media-queries-for-standard-devices/
 */
+/* 358px motoX
+
+*/
 
 
-/* Smartphones (portrait and landscape) ----------- */
-// @media screen 
-// and (min-device-width : 320px) 
-// and (max-device-width : 480px) {
-
-// }
 
 
 
 .menu-button{
 	display: block;
-	// float: right;
-	// padding: 18px 2% 0;
 	position: fixed;
 	right: 9px;
 	top: 18px;
 	opacity: .8;
+	z-index: 9999;
 }
 
 header{
@@ -88,9 +86,12 @@ header{
 
 .landing{
 	width: 100%;
-	// background: $dark-red;
-}
+	
+	.page-inner{
+		padding: 0;
 
+	}
+}
 
 /* ----------------Landing page scene----------------*/
 .scene{
@@ -114,7 +115,7 @@ header{
 #curtain-wrapper{
 	width: 100%;
 	min-width: 837px;
-	max-height: 620px;
+	min-height: 100%;
 	position: absolute;
 	top: 0;
 	z-index: 10;
@@ -125,17 +126,11 @@ header{
 #curtain-left, #fog-left{
 	position: absolute;
 	left: 0;
-	max-width: 100%;
-	max-height: 620px;
-
 }
 
 #curtain-right, #fog-right{
 	position: absolute;
 	right: 0;
-	max-width: 100%;
-	max-height: 620px;
-
 }
 
 #curtain-center{
@@ -160,6 +155,16 @@ header{
 
 
 
+.page{
+	// border-bottom: 1px solid $dark-grey;
+	padding: 2% 0;
+}
+
+.page-inner{
+	padding: 0 6%;
+
+}
+
 .ornament{
 	display: block;
 	width: 150px;
@@ -177,6 +182,8 @@ h2{
 
 .videos{
 	overflow: hidden;
+	max-width: 420px;
+	margin: 0 auto;
 
 	.video-wrapper{
 		float: left;
@@ -229,7 +236,7 @@ h2{
 		}
 
 		input[type=submit]{
-			background: $blue;
+			background: $purple;
 			color: $white;
 			clear: both;
 			height: 45px;
@@ -253,6 +260,9 @@ h2{
 		}
 	}
 
+.contact-info{
+	display: none;
+}
 
 
 
@@ -269,6 +279,13 @@ footer{
 
 
 
+/* Smartphones (portrait and landscape) ----------- */
+// @media screen 
+// and (min-device-width : 320px) 
+// and (max-device-width : 480px) {
+
+// }
+
 /* Smartphones  ----------- */
 @media only screen 
 and (min-width : 480px) {
@@ -283,30 +300,56 @@ and (min-width : 480px) {
 
 
 
-
-
-/* Smartphones (portrait) ----------- */
-@media only screen 
-and (max-width : 320px) {
-/* Styles */
-}
-
-
-
-
-
-
-
 /* iPads (portrait and landscape) ----------- */
 @media only screen 
-and (min-width : 768px) {
+and (min-width : 750px) {
 
 .scene{
-	height: 620px;
+	height: 590px;
 }
 
-#curtain-wrapper{
+.videos{
+	max-width: 590px;
+
+	.video-wrapper{
+		float: left;
+		
+
+		iframe{
+		width: 220px;
+		height: 165px; 
+		}
+
+		h3{
+			text-align: center;
+			margin-top: 9px;
+			margin-bottom: 36px;
+		}
+	}
+
+	.video-wrapper:nth-child(odd){
+			margin-right: 13%;
+		}
+}
+
+.page-inner{
+	overflow: hidden;
+}
+
+.form{
+	float: left;
+}
+
+.contact-info{
 	display: block;
+	float: left;
+	width: 250px;
+	margin: 18px 0 0 13%;
+
+	a{
+		font-size: 3em;
+		font-family: 'Tangerine', cursive;
+	}
 }
 
 }/*min-width 768*/
@@ -316,39 +359,18 @@ and (min-width : 768px) {
 
 
 
-
-/* iPads (landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
-/* Styles */
-}
-
-
-
-
-
-
-
-/* iPads (portrait) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) {
-/* Styles */
-}
-
-
-
-
-
-
-
 /* Desktops and laptops ----------- */
 @media only screen 
-and (min-width : 1224px) {
-/* Styles */
+and (min-width : 769px) {
+
+.scene{
+	height: 620px;
+}
+
+#curtain-wrapper{
+	display: block;
+}
+
 }
 
 
