@@ -6,30 +6,34 @@ $(function(){
 
 //---------------------Sidr slide in menu------------------------
 
-//creates a new menu
-$('#menu').sidr();
-  
-//closes menu on document click
-$(document).on('click', function(e){
-	console.log('close');
-	$.sidr('close', 'sidr');
+//runs only on mobile sizes devices
+$(window).resize(function(event){
+	if($(window).width() < 769){
+		//creates a new menu
+		$('#menu').sidr();
+		  
+		//closes menu on document click
+		$(document).on('click', function(e){
+			console.log('close');
+			$.sidr('close', 'sidr');
+		});
+
+
+		//jquery touchwipe control over Sidr menu
+		//http://www.netcu.de/jquery-touchwipe-iphone-ipad-library
+		$(window).touchwipe({
+			wipeLeft: function() {
+			  // Close
+			  $.sidr('close', 'sidr');
+			},
+			wipeRight: function() {
+			  // Open
+			  $.sidr('open', 'sidr');
+			},
+			preventDefaultEvents: false
+		});
+	}
 });
-
-
-//jquery touchwipe control over Sidr menu
-//http://www.netcu.de/jquery-touchwipe-iphone-ipad-library
-$(window).touchwipe({
-	wipeLeft: function() {
-	  // Close
-	  $.sidr('close', 'sidr');
-	},
-	wipeRight: function() {
-	  // Open
-	  $.sidr('open', 'sidr');
-	},
-	preventDefaultEvents: false
-});
-
 
 
 

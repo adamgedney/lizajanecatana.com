@@ -29,20 +29,7 @@ $dark-red: #490406;
 
 
 
-/* #Media Queries
-================================================== */
-/*
-Grabbed from Chris Coyer.
-http://css-tricks.com/snippets/css/media-queries-for-standard-devices/
-*/
-/* 358px motoX
-
-*/
-
-
-
-
-
+/*-----------------------Styles------------------------*/
 .menu-button{
 	display: block;
 	position: fixed;
@@ -236,7 +223,7 @@ h2{
 		}
 
 		input[type=submit]{
-			background: $purple;
+			background: $blue;
 			color: $white;
 			clear: both;
 			height: 45px;
@@ -264,9 +251,6 @@ h2{
 	display: none;
 }
 
-
-
-
 footer{
 	margin-top: 72px;
 
@@ -276,6 +260,12 @@ footer{
 
 	}
 }
+
+
+
+
+
+
 
 
 
@@ -300,6 +290,10 @@ and (min-width : 480px) {
 
 
 
+
+
+
+
 /* iPads (portrait and landscape) ----------- */
 @media only screen 
 and (min-width : 750px) {
@@ -319,12 +313,6 @@ and (min-width : 750px) {
 		width: 220px;
 		height: 165px; 
 		}
-
-		h3{
-			text-align: center;
-			margin-top: 9px;
-			margin-bottom: 36px;
-		}
 	}
 
 	.video-wrapper:nth-child(odd){
@@ -332,8 +320,10 @@ and (min-width : 750px) {
 		}
 }
 
-.page-inner{
+.contact .page-inner{
 	overflow: hidden;
+	width: 770px;
+	margin: 0 auto;
 }
 
 .form{
@@ -342,9 +332,9 @@ and (min-width : 750px) {
 
 .contact-info{
 	display: block;
-	float: left;
-	width: 250px;
-	margin: 18px 0 0 13%;
+	float: right;
+	width: 225px;
+	margin: 18px 0 0 80px;
 
 	a{
 		font-size: 3em;
@@ -352,7 +342,59 @@ and (min-width : 750px) {
 	}
 }
 
-}/*min-width 768*/
+}/*min-width 750*/
+
+
+
+
+
+
+
+
+
+//adjusts header nav after JS removes slide in menu
+@media only screen 
+and (min-width : 769px) {
+
+header{
+
+	h1{
+		float: left;
+	}
+
+	nav{
+		float: right;
+		padding-right: 2%;
+		padding-top: 18px;
+		width: 300px;
+
+		ul{
+			li{
+				display: inline-block;
+				height: 44px;
+				text-align: center;
+				margin-right: 4%;
+				border: none;
+
+				:hover{
+					color: $red;
+				}
+
+				a{
+					font-size: 2.1em;
+				}
+			}
+		}
+	}
+}
+
+.menu-button{
+	display: none;
+}
+}
+
+
+
 
 
 
@@ -361,7 +403,7 @@ and (min-width : 750px) {
 
 /* Desktops and laptops ----------- */
 @media only screen 
-and (min-width : 769px) {
+and (min-width : 837px) {
 
 .scene{
 	height: 620px;
@@ -371,10 +413,62 @@ and (min-width : 769px) {
 	display: block;
 }
 
+.videos{
+	max-width: 870px;
+
+	.video-wrapper{
+		float: left;
+		
+
+		iframe{
+		width: 320px;
+		height: 233px; 
+		}
+	}
+
+	.video-wrapper:nth-child(odd){
+			margin: 0 4%;
+		}
+}
+
+
 }
 
 
 
+
+
+
+
+
+
+/* Desktops ---------------------- */
+@media only screen 
+and (min-width : 1140px) {
+
+.videos{
+	max-width: 100%;
+
+	.video-wrapper{
+		float: left;
+		
+
+		iframe{
+		width: 310px;
+		height: 223px; 
+		}
+	}
+
+	.video-wrapper:nth-child(odd){
+			margin: 0 1%;
+		}
+
+	.video-wrapper:nth-child(even){
+			margin: 0 1%;
+		}
+}
+
+}
 
 
 

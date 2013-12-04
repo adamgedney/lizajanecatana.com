@@ -160,9 +160,9 @@
 						<h2 id="photos">Photos</h2>
 						<img class="ornament" src="/images/ornament.png" alt="page ornament" />
 
-						<div class="picasa" id="gallery">
+						<!-- <div class="picasa" id="gallery">
 				        	<embed type="application/x-shockwave-flash" src="https://static.googleusercontent.com/external_content/picasaweb.googleusercontent.com/slideshow.swf" width="100%" height="100%" flashvars="host=picasaweb.google.com&hl=en_US&feat=flashalbum&RGB=0x000000&feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2F112323008573640601447%2Falbumid%2F5943929266358395361%3Falt%3Drss%26kind%3Dphoto%26hl%3Den_US" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
-				        </div>
+				        </div> -->
 
 					</div><!-- /.page-inner-->
 				</div><!-- /.page-->
