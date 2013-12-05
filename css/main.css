@@ -134,10 +134,14 @@ header {
 /* ----------------Landing page scene----------------*/
 .scene {
   height: 297px;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .scene .scene-inner {
-    max-width: 862px;
-    margin: 0 auto; }
+    width: 862px;
+    position: absolute;
+    height: 297px;
+    left: 17%;
+    top: 0; }
   .scene img {
     position: absolute;
     top: 0;
@@ -201,6 +205,8 @@ h2 {
   overflow: hidden;
   max-width: 420px;
   margin: 0 auto; }
+  .videos .page-inner {
+    overflow: hidden; }
   .videos .video-wrapper {
     float: left;
     margin-right: 2%; }
@@ -213,6 +219,29 @@ h2 {
       text-align: center;
       margin-top: 9px;
       margin-bottom: 36px; }
+
+/*picasa thumb display*/
+/*picasa slideshow*/
+.picasa-wrapper {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  height: 250px;
+  overflow: hidden; }
+  .picasa-wrapper img#prevbtn {
+    display: none; }
+  .picasa-wrapper img#nextbtn {
+    display: none; }
+
+.picasagallery {
+  height: 250px;
+  clear: both;
+  width: 300px;
+  margin: 0 auto; }
+  .picasagallery .pic {
+    width: 500px;
+    display: inline-block;
+    text-align: center; }
 
 /*---------------- Contact form----------------*/
 .form {
@@ -272,15 +301,37 @@ footer {
   .scene {
     height: 590px; }
 
-  .videos {
-    max-width: 590px; }
-    .videos .video-wrapper {
+  /*picasa slideshow*/
+  .picasa-wrapper {
+    position: relative;
+    width: 620px;
+    margin: 0 auto;
+    height: 400px;
+    overflow: hidden; }
+    .picasa-wrapper img#prevbtn {
+      opacity: .8;
+      position: absolute;
+      left: 0;
+      margin-top: 160px;
+      display: inline-block;
       float: left; }
-      .videos .video-wrapper iframe {
-        width: 220px;
-        height: 165px; }
-    .videos .video-wrapper:nth-child(odd) {
-      margin-right: 13%; }
+    .picasa-wrapper img#nextbtn {
+      opacity: .8;
+      position: absolute;
+      right: 0;
+      margin-top: 160px;
+      display: inline-block;
+      float: right; }
+
+  .picasagallery {
+    height: 300px;
+    clear: both;
+    width: 500px;
+    margin: 0 auto; }
+    .picasagallery .pic {
+      width: 500px;
+      display: inline-block;
+      text-align: center; }
 
   .contact .page-inner {
     overflow: hidden;
@@ -304,7 +355,7 @@ footer {
     float: left; }
   header nav {
     float: right;
-    padding-right: 2%;
+    padding-right: 18px;
     padding-top: 18px;
     width: 300px; }
     header nav ul li {
@@ -340,7 +391,7 @@ footer {
 /* Desktops ---------------------- */
 @media only screen and (min-width: 1140px) {
   .videos {
-    max-width: 100%; }
+    max-width: 1130px; }
     .videos .video-wrapper {
       float: left; }
       .videos .video-wrapper iframe {

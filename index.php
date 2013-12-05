@@ -26,11 +26,10 @@
 	
 
 	<!-- Stylesheets -->
-	<link rel="stylesheet" href="css/animate.css" />
 	<link rel="stylesheet" href="css/jquery.sidr.dark.css" />
 
-	<link href="./fancyBox/helpers/jquery.fancybox-thumbs.css?v=2.0.5" rel="stylesheet" type="text/css" media="screen" />
 	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/lightbox.css" />
 
 </head>
 	<body>
@@ -60,20 +59,20 @@
 
 					<div class="page-inner">
 
-						<div class="scene">
+						<ul class="scene" id="scene">
 
-							<img id="fog-right" src="/images/scene/4-rightInnerFog.png" alt="scene layer"/>
-								<img id="fog-left" src="/images/scene/5-leftInnerFog.png" alt="scene layer"/>
+							<li class="layer" data-depth="0.70"><img id="fog-right" src="/images/scene/4-rightInnerFog.png" alt="scene layer"/></li>
+								<li class="layer" data-depth="0.45"><img id="fog-left" src="/images/scene/5-leftInnerFog.png" alt="scene layer"/></li>
 
 							<div class="scene-inner">
-								<img src="/images/scene/1-rearCurtain.png" alt="scene layer"/>
-								<img src="/images/scene/2-chandShadow.png" alt="scene layer"/>
-								<img src="/images/scene/3-chand.png" alt="scene layer"/>
+								<li class="layer" data-depth="0.10"><img src="/images/scene/1-rearCurtain.png" alt="scene layer"/></li>
+								<li class="layer" data-depth="0.20"><img src="/images/scene/2-chandShadow.png" alt="scene layer"/></li>
+								<li class="layer" data-depth="0.30"><img src="/images/scene/3-chand.png" alt="scene layer"/></li>
 								
 								
 								
-								<img src="/images/scene/6-singerShadow.png" alt="scene layer"/>
-								<img src="/images/scene/7-singer.png" alt="scene layer"/>
+								<li class="layer" data-depth="0.30"><img src="/images/scene/6-singerShadow.png" alt="scene layer"/></li>
+								<li class="layer" data-limit-y="2" data-depth="0.50"><img src="/images/scene/7-singer.png" alt="scene layer"/></li>
 							</div><!-- /.scene-inner-->
 
 							<div id="curtain-wrapper">
@@ -82,9 +81,9 @@
 								<img id="curtain-right" src="/images/scene/8b-curtainRight.png" alt="scene layer"/>
 							</div><!-- /#curtain-wrapper-->
 
-							<img id="center-fog" src="/images/scene/9-outerFog.png" alt="scene layer"/>
+							<li class="layer" data-depth="0.05"><img id="center-fog" src="/images/scene/9-outerFog.png" alt="scene layer"/></li>
 
-						</div><!-- /.scene-->
+						</ul><!-- /.scene-->
 
 					</div><!-- /.page-inner-->
 				</div><!-- /.page-->
@@ -160,9 +159,15 @@
 						<h2 id="photos">Photos</h2>
 						<img class="ornament" src="/images/ornament.png" alt="page ornament" />
 
-						<!-- <div class="picasa" id="gallery">
-				        	<embed type="application/x-shockwave-flash" src="https://static.googleusercontent.com/external_content/picasaweb.googleusercontent.com/slideshow.swf" width="100%" height="100%" flashvars="host=picasaweb.google.com&hl=en_US&feat=flashalbum&RGB=0x000000&feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2F112323008573640601447%2Falbumid%2F5943929266358395361%3Falt%3Drss%26kind%3Dphoto%26hl%3Den_US" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
-				        </div> -->
+						<div class='picasa-wrapper'>
+							<img id="prevbtn" src="/images/prev.png" alt="previous arrow"/>
+							<img id="nextbtn" src="/images/next.png" alt="previous arrow"/>
+
+									<div class='picasagallery'>
+									</div><!-- /.picasagallery-->
+							
+						</div><!-- /.picasa-wrapper-->
+
 
 					</div><!-- /.page-inner-->
 				</div><!-- /.page-->
@@ -214,12 +219,15 @@
 		<script src="js/jquery-1.10.2.min.js"></script>
 		<script src="js/jquery.sidr.min.js"></script>
 		<script src="js/jquery.touchwipe.min.js"></script>
-
-		 <script src="js/jquery.event.special.js"></script>
-  		<script src="js/jquery.easing.min.js"></script>
-  		<!-- <script src="js/jquery.scrollsnap.js"></script> -->
-		<script src="js/main.js"></script>
 		
+
+
+		<script src="js/jquery.event.special.js"></script>
+   		<script src="js/jquery.easing.min.js"></script>
+  		<script src="js/lightbox-2.6.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/jquery.parallax.min.js"></script>
+
 	</body>
 </html>
 

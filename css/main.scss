@@ -84,10 +84,16 @@ header{
 .scene{
 	height: 297px;
 	position: relative;
+	overflow: hidden;
 
 	.scene-inner{
-		max-width: 862px;
-		margin: 0 auto;
+		width: 862px;
+		// margin: 0 auto;
+		position: absolute;
+		height: 297px;
+		left: 17%;
+		top: 0;
+
 	}
 
 	img{
@@ -172,6 +178,10 @@ h2{
 	max-width: 420px;
 	margin: 0 auto;
 
+	.page-inner{
+		overflow: hidden;
+	}
+
 	.video-wrapper{
 		float: left;
 		margin-right: 2%;
@@ -191,7 +201,44 @@ h2{
 	}
 }
 
+/*picasa thumb display*/
+// .picasa{
+// 	img{
+// 		max-width: 320px;
+// 		margin: 0 2% 2%;
+// 	}
+// }
 
+/*picasa slideshow*/
+.picasa-wrapper{
+	position: relative;
+	// z-index: 5000;
+	width: 320px;
+	margin: 0 auto;
+	height: 250px;
+	overflow: hidden;
+
+	img#prevbtn{
+		display: none;
+	}
+
+	img#nextbtn{
+		display: none;
+	}
+}
+
+.picasagallery{
+	height: 250px;
+	clear: both;
+	width: 300px;
+	margin: 0 auto;
+
+	.pic{
+		width: 500px;
+		display: inline-block;
+		text-align: center;
+	}
+}
 
 
 /*---------------- Contact form----------------*/
@@ -302,23 +349,66 @@ and (min-width : 750px) {
 	height: 590px;
 }
 
-.videos{
-	max-width: 590px;
+// .videos{
+// 	max-width: 590px;
 
-	.video-wrapper{
-		float: left;
+// 	.video-wrapper{
+// 		float: left;
 		
 
-		iframe{
-		width: 220px;
-		height: 165px; 
-		}
+// 		iframe{
+// 		width: 220px;
+// 		height: 165px; 
+// 		}
+// 	}
+
+// 	.video-wrapper:nth-child(odd){
+// 			margin-right: 13%;
+// 		}
+// }
+
+
+/*picasa slideshow*/
+.picasa-wrapper{
+	position: relative;
+	// z-index: 5000;
+	width: 620px;
+	margin: 0 auto;
+	height: 400px;
+	overflow: hidden;
+
+	img#prevbtn{
+		opacity: .8;
+		position: absolute;
+		left: 0;
+		margin-top: 160px;
+		display: inline-block;
+		float: left;
 	}
 
-	.video-wrapper:nth-child(odd){
-			margin-right: 13%;
-		}
+	img#nextbtn{
+		opacity: .8;
+		position: absolute;
+		right: 0;
+		margin-top: 160px;
+		display: inline-block;
+		float: right;
+	}
 }
+
+.picasagallery{
+	height: 300px;
+	clear: both;
+	width: 500px;
+	margin: 0 auto;
+
+	.pic{
+		width: 500px;
+		display: inline-block;
+		text-align: center;
+	}
+}
+
 
 .contact .page-inner{
 	overflow: hidden;
@@ -364,7 +454,7 @@ header{
 
 	nav{
 		float: right;
-		padding-right: 2%;
+		padding-right: 18px;
 		padding-top: 18px;
 		width: 300px;
 
@@ -447,7 +537,7 @@ and (min-width : 837px) {
 and (min-width : 1140px) {
 
 .videos{
-	max-width: 100%;
+	max-width: 1130px;
 
 	.video-wrapper{
 		float: left;
