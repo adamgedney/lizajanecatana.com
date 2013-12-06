@@ -37,7 +37,7 @@
 		<header>
 			<h1>Liza Jane Catana</h1>
 
-			<a class="menu-button" id="menu" href="#sidr" ><img src="/images/menu.png" alt="menu button"/></a>
+			<a class="menu-button" id="menu" href="#sidr" ><img src="images/menu.png" alt="menu button"/></a>
 
 			<div id="sidr">
 				<nav>
@@ -61,27 +61,37 @@
 
 						<ul class="scene" id="scene">
 
-							<li class="layer" data-depth="0.70"><img id="fog-right" src="/images/scene/4-rightInnerFog.png" alt="scene layer"/></li>
-								<li class="layer" data-depth="0.45"><img id="fog-left" src="/images/scene/5-leftInnerFog.png" alt="scene layer"/></li>
+							<li class="layer anim" data-depth="0.60"><img id="fog-right" src="images/scene/4-rightInnerFog.png" alt="scene layer"/></li>
+							<li class="layer anim" data-depth="0.65"><img id="fog-left" src="images/scene/5-leftInnerFog.png" alt="scene layer"/></li>
+							
+							
 
 							<div class="scene-inner">
-								<li class="layer" data-depth="0.10"><img src="/images/scene/1-rearCurtain.png" alt="scene layer"/></li>
-								<li class="layer" data-depth="0.20"><img src="/images/scene/2-chandShadow.png" alt="scene layer"/></li>
-								<li class="layer" data-depth="0.30"><img src="/images/scene/3-chand.png" alt="scene layer"/></li>
+								<li class="layer" data-depth="0.10"><img src="images/scene/1-rearCurtain.png" alt="scene layer"/></li>
+								<li class=" swing" data-depth="0.15"><img src="images/scene/2-chandShadow.png" alt="scene layer"/></li>
+								<li class="chandelier swing" data-depth="0.20"><img src="images/scene/3-chand.png" alt="scene layer"/></li>
+								<!-- <li class="layer anim" data-depth="0.30"><img src="images/scene/3a-chandLight.png" alt="scene layer"/></li> -->
 								
 								
-								
-								<li class="layer" data-depth="0.30"><img src="/images/scene/6-singerShadow.png" alt="scene layer"/></li>
-								<li class="layer" data-limit-y="2" data-depth="0.50"><img src="/images/scene/7-singer.png" alt="scene layer"/></li>
+								<li class="layer anim" data-depth="0.15"><img src="images/scene/6-singerShadow.png" alt="scene layer"/></li>
+								<li class="layer" data-limit-y="2" data-depth="0.50"><img src="images/scene/7-singer.png" alt="scene layer"/></li>
+
 							</div><!-- /.scene-inner-->
 
 							<div id="curtain-wrapper">
-								<img id="curtain-left" src="/images/scene/8a-curtainLeft.png" alt="scene layer"/>
+								<img id="curtain-left" src="images/scene/8a-curtainLeft.png" alt="scene layer"/>
 									<div id="curtain-center"></div>
-								<img id="curtain-right" src="/images/scene/8b-curtainRight.png" alt="scene layer"/>
+								<img id="curtain-right" src="images/scene/8b-curtainRight.png" alt="scene layer"/>
 							</div><!-- /#curtain-wrapper-->
 
-							<li class="layer" data-depth="0.05"><img id="center-fog" src="/images/scene/9-outerFog.png" alt="scene layer"/></li>
+							<li class="layer" data-depth="0.65"><img id="inner-fog" src="images/scene/5a-innerFog.png" alt="scene layer"/></li>
+							<li class="layer anim" data-depth="0.70"><img id="center-fog" src="images/scene/9-outerFog.png" alt="scene layer"/></li>
+
+							<li class="layer anim" data-depth="0.80"><img id="light" src="images/scene/10-light1.png" alt="scene layer"/></li>
+							<li class="layer anim" data-depth="0.90"><img id="light" src="images/scene/10-light2.png" alt="scene layer"/></li>
+							<li class="layer anim" data-depth="1.00"><img id="light" src="images/scene/10-light3.png" alt="scene layer"/></li>
+
+							<li><img id="center-fog" src="images/scene/11-outerBlack.png" alt="scene layer"/></li>
 
 						</ul><!-- /.scene-->
 
@@ -97,7 +107,7 @@
 
 						
 						<h2 id="bio">Bio</h2>
-						<img class="ornament" src="/images/ornament.png" alt="page ornament" />
+						<img class="ornament" src="images/ornament.png" alt="page ornament" />
 							<p>Liza Jane Catana is a petite singer with a big voice. She hails from Key West, Florida and is known as the knock-it-out-of-the-park soprano with a vocal range of an octave and a half.</p>
 
 							<p>She has been singing opera since the age of 4 and is known for her rock opera techniques. Her style and preferences are classical music mixed with rock and current pop with a hint of blues.</p> 
@@ -118,7 +128,7 @@
 
 						
 						<h2 id="videos">Videos</h2>
-						<img class="ornament" src="/images/ornament.png" alt="page ornament" />
+						<img class="ornament" src="images/ornament.png" alt="page ornament" />
 
 						<div class="video-wrapper">
 							<iframe src="//www.youtube.com/embed/cbx63WM5Wus" frameborder="0" allowfullscreen></iframe>
@@ -157,11 +167,11 @@
 
 						
 						<h2 id="photos">Photos</h2>
-						<img class="ornament" src="/images/ornament.png" alt="page ornament" />
+						<img class="ornament" src="images/ornament.png" alt="page ornament" />
 
 						<div class='picasa-wrapper'>
-							<img id="prevbtn" src="/images/prev.png" alt="previous arrow"/>
-							<img id="nextbtn" src="/images/next.png" alt="previous arrow"/>
+							<img id="prevbtn" src="images/prev.png" alt="previous arrow"/>
+							<img id="nextbtn" src="images/next.png" alt="previous arrow"/>
 
 									<div class='picasagallery'>
 									</div><!-- /.picasagallery-->
@@ -177,7 +187,7 @@
 
 
 						<h2 id="contact">Contact</h2>
-						<img class="ornament" src="/images/ornament.png" alt="page ornament" />
+						<img class="ornament" src="images/ornament.png" alt="page ornament" />
 
 						<div class="form">
 							<form action="?action=contact" method="post">
@@ -211,12 +221,24 @@
 			</div><!-- /.container-->	
 
 		<footer>
+		<a class="menu-button" id="menu" href="#sidr" ><img src="images/menu.png" alt="menu button"/></a>
+
+				<nav>
+					<ul>
+						<li><a class="slow-jump" id="bio-nav" href="#bio">Bio</a></li>
+						<li><a class="slow-jump" href="#videos">Videos</a></li>
+						<li><a class="slow-jump" href="#photos">Photos</a></li>
+						<li><a class="slow-jump" href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+
 			<p><span class="red">&copy;2013</span> LizaJaneCatana.com</p>
 		</footer>
 		<!-- Scripts -->
 
 		<!-- // <script src="js/jquery-1.7.1.js"></script> -->
 		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/jquery.parallax.min.js"></script>
 		<script src="js/jquery.sidr.min.js"></script>
 		<script src="js/jquery.touchwipe.min.js"></script>
 		
@@ -226,7 +248,7 @@
    		<script src="js/jquery.easing.min.js"></script>
   		<script src="js/lightbox-2.6.min.js"></script>
 		<script src="js/main.js"></script>
-		<script src="js/jquery.parallax.min.js"></script>
+		
 
 	</body>
 </html>

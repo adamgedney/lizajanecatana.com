@@ -43,7 +43,7 @@ ul {
 body {
   background: #101010;
   color: #e6e6e6;
-  font: 62.5% 'Droid Serif', Georgia,Helvetica,Arial,sans-serif; }
+  font: 62.5% "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
 
 h1, h2, h3, h4, nav {
   font-family: 'Tangerine', cursive; }
@@ -106,7 +106,7 @@ img, iframe {
   right: 9px;
   top: 18px;
   opacity: .8;
-  z-index: 9999; }
+  z-index: 99999; }
 
 header {
   border-top: 3px solid #490406;
@@ -138,9 +138,6 @@ header {
   overflow: hidden; }
   .scene .scene-inner {
     width: 862px;
-    position: absolute;
-    height: 297px;
-    left: 17%;
     top: 0; }
   .scene img {
     position: absolute;
@@ -182,8 +179,34 @@ header {
   left: 0;
   right: 0; }
 
+.chandelier {
+  width: 392px;
+  height: 250px;
+  margin: -435px auto 0;
+  position: absolute; }
+
+.swing {
+  -webkit-transition: all 3s ease-in-out;
+  -moz-transition: all 3s ease-in-out;
+  -o-transition: all 3s ease-in-out;
+  -ms-transition: all 3s ease-in-out;
+  transition: all 3s ease-in-out;
+  -moz-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  -ms-transform: rotate(20deg); }
+
+.right {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg); }
+
 .page {
   padding: 2% 0; }
+
+.page:nth-child(odd) {
+  background: #171717; }
 
 .page-inner {
   padding: 0 6%; }
@@ -196,6 +219,7 @@ header {
   text-align: center; }
 
 h2 {
+  font-size: 6.3em;
   line-height: .8em;
   margin-top: 72px;
   margin-bottom: 0;
@@ -246,7 +270,7 @@ h2 {
 /*---------------- Contact form----------------*/
 .form {
   width: 294px;
-  margin: 0 auto; }
+  margin: 0 auto 72px; }
   .form form {
     width: 294px;
     margin: 0 auto;
@@ -264,12 +288,14 @@ h2 {
   .form textarea {
     height: 198px; }
   .form input[type=submit] {
+    background: none;
+    border: none;
+    border-radius: 0;
     background: #1e89b1;
     color: #e6e6e6;
     clear: both;
     height: 45px;
     font-size: 1.8em;
-    border-radius: none;
     float: left;
     margin-top: 18px; }
   .form label {
@@ -285,11 +311,9 @@ h2 {
 .contact-info {
   display: none; }
 
-footer {
-  margin-top: 72px; }
-  footer p {
-    font-size: 1.2em;
-    text-align: center; }
+footer p {
+  font-size: 1.2em;
+  text-align: center; }
 
 /* Smartphones (portrait and landscape) ----------- */
 /* Smartphones  ----------- */
@@ -351,30 +375,48 @@ footer {
       font-family: 'Tangerine', cursive; } }
 /*min-width 750*/
 @media only screen and (min-width: 769px) {
-  header h1 {
+  header h1, footer h1 {
     float: left; }
-  header nav {
+  header nav, footer nav {
     float: right;
     padding-right: 18px;
     padding-top: 18px;
     width: 300px; }
-    header nav ul li {
+    header nav ul li, footer nav ul li {
       display: inline-block;
       height: 44px;
       text-align: center;
       margin-right: 4%;
       border: none; }
-      header nav ul li :hover {
+      header nav ul li :hover, footer nav ul li :hover {
         color: #cd241b; }
-      header nav ul li a {
+      header nav ul li a, footer nav ul li a {
         font-size: 2.1em; }
 
   .menu-button {
-    display: none; } }
+    display: none; }
+
+  footer {
+    border-top: 1px solid #cd241b; }
+    footer a {
+      color: #e6e6e6; } }
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 837px) {
   .scene {
     height: 620px; }
+
+  .scene-inner {
+    position: absolute;
+    max-height: 297px;
+    left: 13%;
+    right: 13%;
+    top: 0; }
+
+  .chandelier {
+    width: 862px;
+    height: 620px;
+    margin: -235px auto 0;
+    position: absolute; }
 
   #curtain-wrapper {
     display: block; }
