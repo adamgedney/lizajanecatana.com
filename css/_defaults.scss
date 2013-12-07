@@ -45,10 +45,9 @@ font-weight: 100;
 -webkit-font-smoothing: antialiased;
 }
 
-// label{
-// 	font-size: 1.8em;
-// 	color: $mid-grey;
-// }
+p{
+	color: $light-grey;
+}
 
 input{
 -webkit-font-smoothing: antialiased;
@@ -85,11 +84,12 @@ img, iframe{
 // }
 
 .red{
-	color: $red;
+	color: $dark-red;
 }
 
 .bold{
 	font-weight: 600;
+	color: $grey;
 }
 
 .cf:before,

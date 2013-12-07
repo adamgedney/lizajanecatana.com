@@ -96,7 +96,10 @@
 
 							</ul><!-- /.scene-->
 
-							<img id="center-fog" src="images/scene/11-outerBlack.png" alt="scene layer"/>
+							<div id="center-fog">
+								<img src="images/scene/11-outerBlack.png" alt="scene layer"/>
+							</div><!-- /#center-fog-->
+							
 						</div><!-- /.scene-overflow-->
 					</div><!-- /.page-inner-->
 				</div><!-- /.page-->
