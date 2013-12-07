@@ -11,6 +11,8 @@
 /*----Sass Palette----*/
 $black: #101010;
 $rich-black: #000;
+$light-grey: #9c9c9c;
+$mid-grey: #363636;
 $grey: #7f7f7f;
 $dark-grey: #252525;
 $bg-grey: #171717;
@@ -44,11 +46,16 @@ header{
 	// padding: 2%;
 	border-top: 3px solid $dark-red;
 	overflow: hidden;
+	background: $rich-black;
+	height: 63px;
+	
 
 	h1{
 		text-align: center;
 		font-size: 4.2em;
-		padding: 2%;
+		padding-left: 2%;
+		color: $white;
+		line-height: 63px;
 	}
 
 	nav{
@@ -64,7 +71,7 @@ header{
 
 				a{
 					color: $white;
-					line-height: 45px;
+					line-height: 36px;
 					font-size: 1.2em;
 				}
 			}
@@ -82,10 +89,18 @@ header{
 }
 
 /* ----------------Landing page scene----------------*/
+
+// .scene-overflow{
+// 	overflow: hidden;
+// 	height: 297px;
+// 	margin-bottom: 36px;
+// }
+
 .scene{
 	height: 297px;
 	position: relative;
 	overflow: hidden;
+	margin-top: 36px;
 
 	.scene-inner{
 		width: 862px;
@@ -133,12 +148,14 @@ header{
 }
 
 #center-fog{
+	display: block;
 	position: absolute;
 	width: 100%;
-	max-height: 620px;
+	height: 620px;
 	bottom: 0;
 	left: 0;
 	right: 0;
+	z-index: 9999;
 }
 
 .chandelier{
@@ -153,15 +170,15 @@ header{
 //css swing taken from
 //http://iamdavesmith.com/swinging-an-element-using-css3-transitions-and-a-smidgen-of-jquery/
 .swing {
-	-webkit-transition: all 3s ease-in-out;
-	-moz-transition: all 3s ease-in-out;
-	-o-transition: all 3s ease-in-out;
-	-ms-transition: all 3s ease-in-out;
-	transition: all 3s ease-in-out;
-	-moz-transform:rotate(20deg);
-	-webkit-transform:rotate(20deg);
-	-o-transform:rotate(20deg);
-	-ms-transform:rotate(20deg);
+	-webkit-transition: all 5s ease-in-out;
+	-moz-transition: all 5s ease-in-out;
+	-o-transition: all 5s ease-in-out;
+	-ms-transition: all 5s ease-in-out;
+	transition: all 5s ease-in-out;
+	-moz-transform:rotate(2deg);
+	-webkit-transform:rotate(2deg);
+	-o-transform:rotate(2deg);
+	-ms-transform:rotate(2deg);
 }
  
 .right {
@@ -171,9 +188,12 @@ header{
 	-ms-transform:rotate(0deg);
 }
 
+.light{
+	z-index: 9999;
+}
 
 
-
+/*-------------End scene---------------*/
 .page{
 	// border-bottom: 1px solid $dark-grey;
 	padding: 2% 0;
@@ -192,7 +212,7 @@ header{
 	display: block;
 	width: 150px;
 	max-height: 19px;
-	margin: 0 auto 18px;
+	margin: -18px auto 18px;
 	text-align: center;
 }
 
@@ -200,16 +220,32 @@ h2{
 	font-size: 6.3em;
 	line-height: .8em;
 	margin-top: 72px;
-	margin-bottom: 0;
+	margin-bottom: 18px;
 	text-align: center;
 }
 
+.line-sep{
+	display: inline-block;
+	height: 18px;
+	width: 100%;	
+}
+
+.picasagallery img{
+	-webkit-box-shadow: 2px 2px 5px $rich-black;
+	   -moz-box-shadow: 2px 2px 5px $rich-black;
+			box-shadow: 2px 2px 5px $rich-black;
+}
+
 .videos{
-	overflow: hidden;
-	max-width: 420px;
-	margin: 0 auto;
+	// overflow: hidden;
+	// max-width: 420px;
+	// margin: 0 auto;
 
 	.page-inner{
+		// overflow: hidden;
+	}
+
+	.video-content{
 		overflow: hidden;
 	}
 
@@ -317,9 +353,9 @@ h2{
 		label{
 			// margin-left: 10px;
 			margin-bottom: 0;
-			font-size: 1.5em;
+			font-size: 1.8em;
 			line-height: 1.6em;
-			color: $white;
+			color: $light-grey;
 			font-weight: 400;
 			display: inline;
 			text-align: right;
@@ -332,29 +368,47 @@ h2{
 }
 
 footer{
-	// margin-top: 72px;
+	background: $rich-black;
+	height: 54px;
+	padding-left: 2%;
+	overflow: hidden;
+
+	h1{
+		font-size: 2.1em;
+		line-height: 54px;
+		display: inline-block;
+		width: 150px;
+		float: left;
+	}
+
+	nav{
+		display: none;
+	}
 
 	p{
 		font-size: 1.2em;
-		text-align: center;
+		line-height: 54px;
+		display: inline-block;
+		width: 175px;
+		float: right;
 
 	}
+
+
 }
 
 
 
 
 
+/*--------------------------------Media Queries------------------------*/
+/*
+*/
+/*--------------------------------Media Queries------------------------*/
 
 
 
 
-/* Smartphones (portrait and landscape) ----------- */
-// @media screen 
-// and (min-device-width : 320px) 
-// and (max-device-width : 480px) {
-
-// }
 
 /* Smartphones  ----------- */
 @media only screen 
@@ -362,6 +416,15 @@ and (min-width : 480px) {
 
 .scene{
 	height: 360px;
+}
+
+.ornament{
+	margin: -21px auto 18px;
+}
+
+.video-content{
+	width: 410px;
+	margin: 0 auto;
 }
 
 }
@@ -382,6 +445,9 @@ and (min-width : 750px) {
 	height: 590px;
 }
 
+.ornament{
+	margin: -27px auto 18px;
+}
 
 
 /*picasa slideshow*/
@@ -427,7 +493,7 @@ and (min-width : 750px) {
 
 
 .contact .page-inner{
-	overflow: hidden;
+	// overflow: hidden;
 	width: 770px;
 	margin: 0 auto;
 }
@@ -448,6 +514,17 @@ and (min-width : 750px) {
 	}
 }
 
+
+footer{
+	p{
+		float: none;
+		text-align: center;
+		margin: 0 auto;
+		width: 100%;
+		display: block;
+		height: 54px;
+	}
+}
 }/*min-width 750*/
 
 
@@ -462,6 +539,18 @@ and (min-width : 750px) {
 @media only screen 
 and (min-width : 769px) {
 
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 99999;
+
+	-webkit-box-shadow: 2px 2px 3px $rich-black;
+	   -moz-box-shadow: 2px 2px 3px $rich-black;
+			box-shadow: 2px 2px 3px $rich-black;
+}
+
 header, footer{
 
 	h1{
@@ -469,6 +558,7 @@ header, footer{
 	}
 
 	nav{
+		display: inline;
 		float: right;
 		padding-right: 18px;
 		padding-top: 18px;
@@ -494,17 +584,30 @@ header, footer{
 	}
 }
 
+
+footer{
+	nav{
+		ul{
+			li{
+				a{
+					font-size: 1.6em;
+					color: $white;
+				}
+			}
+		}
+	}
+}
 .menu-button{
 	display: none;
 }
 
-footer{
-	border-top: 1px solid $red;
+// footer{
+// 	border-top: 1px solid $red;
 
-	a{
-		color: $white;
-	}
-}
+// 	a{
+// 		color: $white;
+// 	}
+// }
 
 }
 
@@ -545,8 +648,34 @@ and (min-width : 837px) {
 	display: block;
 }
 
+.page{
+	padding-top: 72px;
+	padding-bottom: 72px;
+}
+
+.landing.page{
+	padding-top: 18px;
+}
+
+.ornament{
+	margin: -84px auto 18px;
+}
+
+.bio{
+	.two-col {
+       -moz-column-count: 2;
+       -moz-column-gap: 20px;
+       -webkit-column-count: 2;
+       -webkit-column-gap: 20px;
+	}
+}
+
 .videos{
-	max-width: 870px;
+
+	.video-content{
+		width: 720px;
+		margin: 0 auto;
+	}
 
 	.video-wrapper{
 		float: left;
@@ -571,6 +700,16 @@ and (min-width : 837px) {
 
 
 
+@media only screen 
+and (min-width : 960px) {
+
+
+
+/*add CSS columns here for bio text*/
+}
+
+
+
 
 
 
@@ -578,8 +717,16 @@ and (min-width : 837px) {
 @media only screen 
 and (min-width : 1140px) {
 
+
+
 .videos{
-	max-width: 1130px;
+	// max-width: 1130px;
+
+
+	.video-content{
+		width: 990px;
+		margin: 0 auto;
+	}
 
 	.video-wrapper{
 		float: left;

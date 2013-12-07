@@ -3,6 +3,43 @@ $(function(){
 
 
 
+//---------------------Sidr slide in menu------------------------
+
+//runs only on mobile sizes devices
+// $(window).resize(function(event){
+	if($(window).width() < 769){
+		//creates a new menu
+		$('#menu').sidr();
+		  
+		//closes menu on document click
+		$(document).on('click', function(e){
+			// console.log('doc click');
+			$.sidr('close', 'sidr');
+
+		});
+
+
+		// jquery touchwipe control over Sidr menu
+		// http://www.netcu.de/jquery-touchwipe-iphone-ipad-library
+		$(window).touchwipe({
+			wipeLeft: function() {
+			  // Close
+			  $.sidr('close', 'sidr');
+			},
+			wipeRight: function() {
+			  // Open
+			  $.sidr('open', 'sidr');
+			},
+			preventDefaultEvents: false
+		});
+	}
+// });
+
+
+
+
+
+
 //------------------------------------------Picasa album slideshow----------------------------------
 
 var username = '112323008573640601447';
@@ -112,7 +149,7 @@ $('#scene').parallax({
   limitX: false,
   limitY: 4,
   scalarX: 9,
-  scalarY: 8,
+  scalarY: 4,
   frictionX: 0.8,
   frictionY: 0.8
 });
@@ -124,13 +161,13 @@ $('#scene').parallax({
 //css chandelier swing
 function swing(){
      $('.swing').toggleClass('right');
-     setTimeout(swing, 3000);
+     setTimeout(swing, 5000);
   };
 
   swing();
 
 //animation run only on desktop sized devices
-if($(window).width() > 769){
+// if($(window).width() > 769){
 
 
 //fog loop
@@ -156,50 +193,77 @@ animate_scene();
 
 function animate_scene(){
 
-	var motion_h = ['-=6px', '+=8px', '-=9px', '-=11px', '+=13px', '-=14px', '+=5px','-=7px', '+=6px', '-=8px', '+=9px', '+=11px', '-=13px', '+=14px', '-=5px','+=7px'];
-	var motion_v = ['-=6px', '+=8px', '-=4px', '+=7px','-=5px', '+=9px', '+=6px', '-=8px', '+=4px', '-=7px','+=5px', '-=9px'];
-
-
-
-	
-//if #scene li.lights then multiply their motion to add drama
 
 	//animated parts
 	$('#scene li.anim').each(function(index){
 
+		var motion_h = ['-=6px', '+=8px', '-=9px', '-=11px', '+=13px', '-=14px', '+=5px','-=7px', '+=6px', '-=8px', '+=9px', '+=11px', '-=13px', '+=14px', '-=5px','+=7px'];
+		var motion_v = ['-=6px', '+=8px', '-=4px', '+=7px','-=5px', '+=9px', '+=6px', '-=8px', '+=4px', '-=7px','+=5px', '-=9px'];
+
 		var rand_mo_h = Math.floor(Math.random() * motion_h.length);
 		var rand_mo_v = Math.floor(Math.random() * motion_v.length);
-		var deg = Math.floor(Math.random() * 360);
 
 
-		//creates synchronous flow of animation events
-		$(this).animate(
-            {"left": motion_h[rand_mo_h],
-        	 "rotate": deg},
-            4000, 'easeInBack', function(){
-	
-	    });// animate() left
+        //if #scene li.lights then multiply their motion to add drama
+		if($(this).hasClass('light')){
+			
+			var motion_h = ['-=36px', '+=38px', '-=39px', '-=31px', '+=33px', '-=34px', '+=35px','-=37px', '+=36px', '-=38px', '+=39px', '+=31px', '-=33px', '+=34px', '-=35px','+=37px'];
+			var motion_v = ['-=36px', '+=38px', '-=34px', '+=37px','-=35px', '+=39px', '+=36px', '-=38px', '+=34px', '-=37px','+=35px', '-=39px'];
+		
+			//creates synchronous flow of animation events
+			$(this).animate(
+	            {"left": motion_h[rand_mo_h]},
+	            2000, 'easeInBack', function(){
+		
+		    });// animate() left
 
-	    $(this).animate(
-            {'top': motion_v[rand_mo_v],
-        	 "rotate": deg},
-            3000, 'easeInBack', function(){
+		    $(this).animate(
+	            {'top': motion_v[rand_mo_v]},
+	            2500, 'easeInBack', function(){
 
-            	//reset to 0
-				$(this).animate(
-					{'left': '0', 'top': '0', 'bottom': '0', 'right': '0'}, 
-					6000, 'easeOutBack', function(){
-						//looper
-						// setTimeout(animate_scene, 500);
-						// animate_scene();
-					});//animate() reset
-        	
-				animate_scene();
-        });// animate() top
+	            	//reset to 0
+					$(this).animate(
+						{'left': '0', 'top': '0', 'bottom': '0', 'right': '0'}, 
+						4000, 'easeInBack', function(){
+							//looper
+							// setTimeout(animate_scene, 500);
+							// animate_scene();
+						});//animate() reset
+	        	
+					animate_scene();
+	        });// animate() top
+
+		}else{//normal scene animation
+
+			//creates synchronous flow of animation events
+			$(this).animate(
+	            {"left": motion_h[rand_mo_h]},
+	            4000, 'easeInBack', function(){
+		
+		    });// animate() left
+
+		    $(this).animate(
+	            {'top': motion_v[rand_mo_v]},
+	            3000, 'easeInBack', function(){
+
+	            	//reset to 0
+					$(this).animate(
+						{'left': '0', 'top': '0', 'bottom': '0', 'right': '0'}, 
+						6000, 'easeOutBack', function(){
+							//looper
+							// setTimeout(animate_scene, 500);
+							// animate_scene();
+						});//animate() reset
+	        	
+					animate_scene();
+	        });// animate() top
+		};
+
+
 	});// each
 };// animate_scene()
 
-}// if
+// }// if
 
 
 
@@ -216,7 +280,7 @@ $('a.slow-jump').on('click', function(e){
 
 //jumplink handler
 function goToByScroll(id){
-$('html,body').animate({scrollTop: $(id).offset().top}, 1000, 'easeOutQuint');
+	$('html,body').animate({scrollTop: $(id).offset().top}, 1000, 'easeOutQuint');
 };
 
 
@@ -225,36 +289,7 @@ $('html,body').animate({scrollTop: $(id).offset().top}, 1000, 'easeOutQuint');
 
 
 
-//---------------------Sidr slide in menu------------------------
 
-//runs only on mobile sizes devices
-// $(window).resize(function(event){
-	// if($(window).width() < 769){
-		//creates a new menu
-		$('#menu').sidr();
-		  
-		//closes menu on document click
-		$(document).on('click', function(e){
-			console.log('close');
-			$.sidr('close', 'sidr');
-		});
-
-
-		//jquery touchwipe control over Sidr menu
-		//http://www.netcu.de/jquery-touchwipe-iphone-ipad-library
-		$(window).touchwipe({
-			wipeLeft: function() {
-			  // Close
-			  $.sidr('close', 'sidr');
-			},
-			wipeRight: function() {
-			  // Open
-			  $.sidr('open', 'sidr');
-			},
-			preventDefaultEvents: false
-		});
-	// }
-// });
 
 
 
