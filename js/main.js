@@ -1,3 +1,12 @@
+//@codekit-prepend "jquery-1.10.2.min.js"
+//@codekit-prepend "jquery.parallax.min.js"
+//@codekit-prepend "jquery.event.special.js"
+//@codekit-prepend "jquery.easing.min.js"
+//@codekit-prepend "lightbox-2.6.min.js"
+
+
+
+//namespace
 $(function(){
 
 
@@ -47,21 +56,7 @@ if($(window).width() < 769){
 			toggle = false;
 		});
 
-		// jquery touchwipe control over dropdown menu
-		// http://www.netcu.de/jquery-touchwipe-iphone-ipad-library
-		// $(window).touchwipe({
-		// 	wipeLeft: function() {
-		// 	 //prev image
-		// 	 prev_img();
-		// 	},
-
-		// 	wipeRight: function() {
-		// 	  	//next image
-		// 	  	next_img();
-		// 	},
-
-		// 	preventDefaultEvents: false
-		// });
+		
 
 
 
@@ -338,14 +333,8 @@ function goToByScroll(id){
 
 
 
-// //-------------------------------------------Scrollsnap.js-----------------------------------
-// 	//https://github.com/benoitpointet/jquery-scrollsnap-plugin/blob/master/index.html
 
-// 	$(document).scrollsnap({
-//         snaps: '.snap',
-//         proximity: 250,
-//         easing: 'easeOutQuint'
-//         });
+
 
 
 
@@ -353,8 +342,3 @@ function goToByScroll(id){
 
 
 });// function
-
-
-
-
-
