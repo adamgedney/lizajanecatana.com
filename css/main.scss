@@ -11,7 +11,7 @@
 /*----Sass Palette----*/
 $black: #101010;
 $rich-black: #000;
-$light-grey: #9c9c9c;
+$light-grey: #d0d0d0;
 $mid-grey: #363636;
 $grey: #7f7f7f;
 $dark-grey: #252525;
@@ -34,23 +34,34 @@ $dark-red: #490406;
 
 /*-----------------------Styles------------------------*/
 .menu-button{
-	display: block;
-	position: fixed;
-	right: 9px;
-	top: 18px;
+	display: inline-block;
 	opacity: .8;
-	z-index: 99999;
+	float: right;
+	padding: 15px 2% 0;
+	// margin: 0;
 }
+
 
 header{
 	// padding: 2%;
 	border-top: 3px solid $dark-red;
 	overflow: hidden;
 	background: $rich-black;
-	height: 63px;
+	// height: 63px;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 99999;
+
+	-webkit-box-shadow: 2px 2px 3px $rich-black;
+	   -moz-box-shadow: 2px 2px 3px $rich-black;
+			box-shadow: 2px 2px 3px $rich-black;
 	
 
 	h1{
+		display: inline-block;
 		text-align: center;
 		font-size: 4.2em;
 		padding-left: 2%;
@@ -71,8 +82,8 @@ header{
 
 				a{
 					color: $white;
-					line-height: 36px;
-					font-size: 1.2em;
+					line-height: 44px;
+					font-size: 1.8em;
 				}
 			}
 		}
@@ -81,6 +92,7 @@ header{
 
 .landing{
 	width: 100%;
+	padding-bottom: 54px;
 	
 	.page-inner{
 		padding: 0;
@@ -90,30 +102,14 @@ header{
 
 /* ----------------Landing page scene----------------*/
 
-// .scene-overflow{
-// 	overflow: hidden;
-// 	height: 297px;
-// 	margin-bottom: 36px;
-// }
-
-.scene-overflow{
-	position: relative;
-}
 
 .scene{
-	height: 297px;
+	min-height: 420px;
 	position: relative;
-	overflow: hidden;
-	margin-top: 36px;
+	margin-top: 72px;
 	margin-bottom: 0;
 
-	.scene-inner{
-		width: 862px;
-		top: 0;
-	}
-
 	img{
-		// width: 100%;
 		position: absolute;
 		top: 0;
 		display: block;
@@ -152,29 +148,21 @@ header{
 	background: url(../images/scene/8c-curtainCenter.png) repeat;
 }
 
-#center-fog{
-	position: absolute;
+img#center-fog{
+	/*inherits position absolute*/
 	width: 100%;
-	top: 0;
+	bottom: -18;
 	left: 0;
 	right: 0;
-	// z-index: 100000;
-
-	img{
-		width: 100%;
-		position: absolute;
-		display: block;
-		top: 0;
-		height: 297px;
-	}
 }
 
 .chandelier{
-	width: 392px;
-	height: 250px;
+	width: 100%;
+	// height: 250px;
 	// margin: 0 auto;
-	margin: -435px auto 0;
+	margin: -120px auto 0; //negative margin used to make rotation of div
 	position: absolute;
+	top: 0;
 
 }
 
@@ -215,7 +203,7 @@ header{
 }
 
 .page:nth-child(odd){
-	background: url(/images/zwartevilt.png) $bg-grey;
+	background: $bg-grey;
 	-webkit-box-shadow: inset 2px 2px 5px $rich-black;
 	   -moz-box-shadow: inset 2px 2px 5px $rich-black;
 			box-shadow: inset 2px 2px 5px $rich-black;
@@ -233,7 +221,7 @@ header{
 	margin: -18px auto 18px;
 	text-align: center;
 	position: relative;
-	z-index: 99999;
+	z-index: 99998;
 }
 
 h2{
@@ -254,6 +242,16 @@ h2{
 	-webkit-box-shadow: 2px 2px 5px $rich-black;
 	   -moz-box-shadow: 2px 2px 5px $rich-black;
 			box-shadow: 2px 2px 5px $rich-black;
+}
+
+
+ul.video-links li a{
+	display: block;
+	font-size: 2.1em;
+	// color: $light-grey;
+	margin: 15px auto;
+	text-align: center;
+	text-decoration: underline;
 }
 
 .videos{
@@ -300,9 +298,9 @@ h2{
 .picasa-wrapper{
 	position: relative;
 	// z-index: 5000;
-	width: 320px;
-	margin: 0 auto;
-	height: 250px;
+	width: 245px;
+	margin: 0 auto 72px;
+	height: 180px;
 	overflow: hidden;
 
 	img#prevbtn{
@@ -315,16 +313,17 @@ h2{
 }
 
 .picasagallery{
-	height: 250px;
+	height: 200px;
 	clear: both;
-	width: 300px;
+	width: 280px;
 	margin: 0 auto;
 
 	.pic{
-		width: 500px;
+		width: 245px;
 		display: inline-block;
 		text-align: center;
 	}
+
 }
 
 
@@ -434,12 +433,42 @@ footer{
 @media only screen 
 and (min-width : 480px) {
 
-.scene{
-	height: 360px;
+
+.landing{
+	min-height: 560px;
+}
+
+
+#center-fog{
+	img{
+		height: 100%;
+	}
+}
+
+.chandelier{
+	height: auto;
+	margin: -200px auto 0;
 }
 
 .ornament{
 	margin: -21px auto 18px;
+}
+
+/*picasa slideshow*/
+.picasa-wrapper{
+	width: 320px;
+	margin: 0 auto;
+	height: 250px;
+}
+
+.picasagallery{
+	height: 250px;
+	width: 300px;
+	margin: 0 auto;
+
+	.pic{
+		width: 500px;
+	}
 }
 
 .video-content{
@@ -451,26 +480,30 @@ and (min-width : 480px) {
 
 
 
+@media only screen 
+and (min-width: 580px) {
 
+.landing{
+	min-height: 660px;
+}
 
-
-
+.chandelier{
+	height: auto;
+	margin: -250px auto 0;
+}
+}
 
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen 
 and (min-width : 750px) {
 
-.scene{
-	height: 590px;
-}
+// .landing{
+// 	height: 760px;
+// }
 
-#center-fog{
-	height: 620px;
-
-	img{
-		height: 620px;
-	}
+.page:nth-child(odd){
+	background: url(/images/zwartevilt.png) $bg-grey;
 }
 
 .ornament{
@@ -567,16 +600,8 @@ footer{
 @media only screen 
 and (min-width : 769px) {
 
-header{
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 99999;
-
-	-webkit-box-shadow: 2px 2px 3px $rich-black;
-	   -moz-box-shadow: 2px 2px 3px $rich-black;
-			box-shadow: 2px 2px 3px $rich-black;
+.landing{
+	min-height: 760px;
 }
 
 header, footer{
@@ -586,7 +611,7 @@ header, footer{
 	}
 
 	nav{
-		display: inline;
+		display: inline-block;
 		float: right;
 		padding-right: 18px;
 		padding-top: 18px;
@@ -651,15 +676,11 @@ footer{
 @media only screen 
 and (min-width : 837px) {
 
-.scene{
-	height: 620px;
-}
-
 .scene-inner{
 	position: absolute;
-	max-height: 297px;
-	left: 13%;
-	right: 13%;
+	height: 720px;
+	left: 0;
+	right: 0;
 	top: 0;
 
 }
@@ -674,6 +695,10 @@ and (min-width : 837px) {
 
 #curtain-wrapper{
 	display: block;
+}
+
+img#center-fog{
+	height: 620px;
 }
 
 .page{
@@ -726,19 +751,10 @@ and (min-width : 837px) {
 
 
 
-
-
-
 @media only screen 
 and (min-width : 960px) {
 
-
-
-/*add CSS columns here for bio text*/
 }
-
-
-
 
 
 

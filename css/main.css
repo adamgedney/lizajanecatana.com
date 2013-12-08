@@ -45,9 +45,9 @@ body {
   color: #e6e6e6;
   font: 62.5% "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
 
-h1, h2, h3, h4, nav {
+h1, h2, h3, h4, nav, .video-links {
   font-family: 'Tangerine', cursive;
-  color: #9c9c9c; }
+  color: #d0d0d0; }
 
 h1 {
   font-size: 5.4em;
@@ -70,10 +70,13 @@ p, ul, dl, label {
   -webkit-font-smoothing: antialiased; }
 
 p {
-  color: #9c9c9c; }
+  color: #d0d0d0; }
 
 input {
   -webkit-font-smoothing: antialiased; }
+
+input[type=submit] {
+  -webkit-appearance: none; }
 
 a {
   text-decoration: none;
@@ -106,7 +109,7 @@ img, iframe {
 
 .bold {
   font-weight: 600;
-  color: #7f7f7f; }
+  color: #e6e6e6; }
 
 .cf:before,
 .cf:after {
@@ -127,19 +130,25 @@ img, iframe {
 
 /*-----------------------Styles------------------------*/
 .menu-button {
-  display: block;
-  position: fixed;
-  right: 9px;
-  top: 18px;
+  display: inline-block;
   opacity: .8;
-  z-index: 99999; }
+  float: right;
+  padding: 15px 2% 0; }
 
 header {
   border-top: 3px solid #490406;
   overflow: hidden;
   background: black;
-  height: 63px; }
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  -webkit-box-shadow: 2px 2px 3px black;
+  -moz-box-shadow: 2px 2px 3px black;
+  box-shadow: 2px 2px 3px black; }
   header h1 {
+    display: inline-block;
     text-align: center;
     font-size: 4.2em;
     padding-left: 2%;
@@ -153,27 +162,21 @@ header {
       color: #cd241b; }
     header nav ul li a {
       color: #e6e6e6;
-      line-height: 36px;
-      font-size: 1.2em; }
+      line-height: 44px;
+      font-size: 1.8em; }
 
 .landing {
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 54px; }
   .landing .page-inner {
     padding: 0; }
 
 /* ----------------Landing page scene----------------*/
-.scene-overflow {
-  position: relative; }
-
 .scene {
-  height: 297px;
+  min-height: 420px;
   position: relative;
-  overflow: hidden;
-  margin-top: 36px;
+  margin-top: 72px;
   margin-bottom: 0; }
-  .scene .scene-inner {
-    width: 862px;
-    top: 0; }
   .scene img {
     position: absolute;
     top: 0;
@@ -206,24 +209,18 @@ header {
   margin: 0 auto;
   background: url(../images/scene/8c-curtainCenter.png) repeat; }
 
-#center-fog {
-  position: absolute;
+img#center-fog {
+  /*inherits position absolute*/
   width: 100%;
-  top: 0;
+  bottom: -18;
   left: 0;
   right: 0; }
-  #center-fog img {
-    width: 100%;
-    position: absolute;
-    display: block;
-    top: 0;
-    height: 297px; }
 
 .chandelier {
-  width: 392px;
-  height: 250px;
-  margin: -435px auto 0;
-  position: absolute; }
+  width: 100%;
+  margin: -120px auto 0;
+  position: absolute;
+  top: 0; }
 
 .swing {
   -webkit-transition: all 5s ease-in-out;
@@ -253,7 +250,7 @@ header {
   box-shadow: -2px -2px 5px black; }
 
 .page:nth-child(odd) {
-  background: url(/images/zwartevilt.png) #171717;
+  background: #171717;
   -webkit-box-shadow: inset 2px 2px 5px black;
   -moz-box-shadow: inset 2px 2px 5px black;
   box-shadow: inset 2px 2px 5px black; }
@@ -268,7 +265,7 @@ header {
   margin: -18px auto 18px;
   text-align: center;
   position: relative;
-  z-index: 99999; }
+  z-index: 99998; }
 
 h2 {
   font-size: 6.3em;
@@ -286,6 +283,13 @@ h2 {
   -webkit-box-shadow: 2px 2px 5px black;
   -moz-box-shadow: 2px 2px 5px black;
   box-shadow: 2px 2px 5px black; }
+
+ul.video-links li a {
+  display: block;
+  font-size: 2.1em;
+  margin: 15px auto;
+  text-align: center;
+  text-decoration: underline; }
 
 .videos .video-content {
   overflow: hidden; }
@@ -306,9 +310,9 @@ h2 {
 /*picasa slideshow*/
 .picasa-wrapper {
   position: relative;
-  width: 320px;
-  margin: 0 auto;
-  height: 250px;
+  width: 245px;
+  margin: 0 auto 72px;
+  height: 180px;
   overflow: hidden; }
   .picasa-wrapper img#prevbtn {
     display: none; }
@@ -316,12 +320,12 @@ h2 {
     display: none; }
 
 .picasagallery {
-  height: 250px;
+  height: 200px;
   clear: both;
-  width: 300px;
+  width: 280px;
   margin: 0 auto; }
   .picasagallery .pic {
-    width: 500px;
+    width: 245px;
     display: inline-block;
     text-align: center; }
 
@@ -360,7 +364,7 @@ h2 {
     margin-bottom: 0;
     font-size: 1.8em;
     line-height: 1.6em;
-    color: #9c9c9c;
+    color: #d0d0d0;
     font-weight: 400;
     display: inline;
     text-align: right;
@@ -395,24 +399,46 @@ footer {
 /*--------------------------------Media Queries------------------------*/
 /* Smartphones  ----------- */
 @media only screen and (min-width: 480px) {
-  .scene {
-    height: 360px; }
+  .landing {
+    min-height: 560px; }
+
+  #center-fog img {
+    height: 100%; }
+
+  .chandelier {
+    height: auto;
+    margin: -200px auto 0; }
 
   .ornament {
     margin: -21px auto 18px; }
 
+  /*picasa slideshow*/
+  .picasa-wrapper {
+    width: 320px;
+    margin: 0 auto;
+    height: 250px; }
+
+  .picasagallery {
+    height: 250px;
+    width: 300px;
+    margin: 0 auto; }
+    .picasagallery .pic {
+      width: 500px; }
+
   .video-content {
     width: 410px;
     margin: 0 auto; } }
+@media only screen and (min-width: 580px) {
+  .landing {
+    min-height: 660px; }
+
+  .chandelier {
+    height: auto;
+    margin: -250px auto 0; } }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width: 750px) {
-  .scene {
-    height: 590px; }
-
-  #center-fog {
-    height: 620px; }
-    #center-fog img {
-      height: 620px; }
+  .page:nth-child(odd) {
+    background: url(/images/zwartevilt.png) #171717; }
 
   .ornament {
     margin: -27px auto 18px; }
@@ -474,20 +500,13 @@ footer {
     height: 54px; } }
 /*min-width 750*/
 @media only screen and (min-width: 769px) {
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 99999;
-    -webkit-box-shadow: 2px 2px 3px black;
-    -moz-box-shadow: 2px 2px 3px black;
-    box-shadow: 2px 2px 3px black; }
+  .landing {
+    min-height: 760px; }
 
   header h1, footer h1 {
     float: left; }
   header nav, footer nav {
-    display: inline;
+    display: inline-block;
     float: right;
     padding-right: 18px;
     padding-top: 18px;
@@ -511,14 +530,11 @@ footer {
     display: none; } }
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 837px) {
-  .scene {
-    height: 620px; }
-
   .scene-inner {
     position: absolute;
-    max-height: 297px;
-    left: 13%;
-    right: 13%;
+    height: 720px;
+    left: 0;
+    right: 0;
     top: 0; }
 
   .chandelier {
@@ -529,6 +545,9 @@ footer {
 
   #curtain-wrapper {
     display: block; }
+
+  img#center-fog {
+    height: 620px; }
 
   .page {
     padding-top: 108px;
@@ -557,8 +576,6 @@ footer {
       height: 233px; }
   .videos .video-wrapper:nth-child(odd) {
     margin: 0 4%; } }
-@media only screen and (min-width: 960px) {
-  /*add CSS columns here for bio text*/ }
 /* Desktops ---------------------- */
 @media only screen and (min-width: 1140px) {
   .videos .video-content {

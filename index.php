@@ -30,8 +30,12 @@
 	<link rel="stylesheet" href="css/jquery.sidr.dark.css" />
 	<link rel="stylesheet" href="css/lightbox.css" />
 
+	<!-- adaptive images -->
+	<script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
+
 	<!-- modernizer -->
 	<script src="js/modernizr.custom.30046.js"></script>
+
 
 </head>
 	<body>
@@ -42,7 +46,7 @@
 			<a class="menu-button" id="menu" href="#sidr" ><img src="images/menu.png" alt="menu button"/></a>
 
 			<div id="sidr">
-				<nav>
+				<nav id="main-nav">
 					<ul>
 						<li><a class="slow-jump" id="bio-nav" href="#bio">Bio</a></li>
 						<li><a class="slow-jump" href="#videos">Videos</a></li>
@@ -60,12 +64,12 @@
 
 
 					<div class="page-inner">
-						<div class="scene-overflow">
 
 							<ul class="scene" id="scene">
+								<li class="loading"></li>
 
-								<li class="layer anim" data-depth="0.60"><img id="fog-right" src="images/scene/4-rightInnerFog.png" alt="scene layer"/></li>
-								<li class="layer anim" data-depth="0.65"><img id="fog-left" src="images/scene/5-leftInnerFog.png" alt="scene layer"/></li>
+								<li class="layer anim" data-depth="0.20"><img id="fog-right" src="images/scene/4-rightInnerFog.png" alt="scene layer"/></li>
+								<li class="layer anim" data-depth="0.50"><img id="fog-left" src="images/scene/5-leftInnerFog.png" alt="scene layer"/></li>
 								
 								
 
@@ -74,7 +78,7 @@
 									<li class="chandelier swing" data-depth="0.20"><img src="images/scene/3-chand.png" alt="scene layer"/></li>
 									
 									
-									<li class="layer anim" data-depth="0.15"><img src="images/scene/6-singerShadow.png" alt="scene layer"/></li>
+									<li class="layer anim" data-depth="0.35"><img src="images/scene/6-singerShadow.png" alt="scene layer"/></li>
 									<li class="layer" data-limit-y="2" data-depth="0.00"><img src="images/scene/7-singer.png" alt="scene layer"/></li>
 
 								</div><!-- /.scene-inner-->
@@ -85,22 +89,17 @@
 									<img id="curtain-right" src="images/scene/8b-curtainRight.png" alt="scene layer"/>
 								</div><!-- /#curtain-wrapper-->
 
-								<li class="layer" data-depth="0.65"><img id="inner-fog" src="images/scene/5a-innerFog.png" alt="scene layer"/></li>
-								<li class="layer anim" data-depth="0.70"><img id="center-fog" src="images/scene/9-outerFog.png" alt="scene layer"/></li>
+								<li class="layer" data-depth="0.75"><img id="inner-fog" src="images/scene/5a-innerFog.png" alt="scene layer"/></li>
+								<li class="layer anim" data-depth="1.00"><img id="center-fog" src="images/scene/9-outerFog.png" alt="scene layer"/></li>
 
-								<li class="layer anim light" data-depth="0.80"><img src="images/scene/10-light1.png" alt="scene layer"/></li>
-								<li class="layer anim light" data-depth="0.90"><img src="images/scene/10-light2.png" alt="scene layer"/></li>
-								<li class="layer anim light" data-depth="0.90"><img src="images/scene/10-light3.png" alt="scene layer"/></li>
-								<li class="layer anim light" data-depth="1.00"><img src="images/scene/10-light4.png" alt="scene layer"/></li>
+								<li class="layer anim light" data-depth="0.60"><img src="images/scene/10-light1.png" alt="scene layer"/></li>
+								<li class="layer anim light" data-depth="0.70"><img src="images/scene/10-light2.png" alt="scene layer"/></li>
+								<li class="layer anim light" data-depth="0.80"><img src="images/scene/10-light3.png" alt="scene layer"/></li>
+								<li class="layer anim light" data-depth="0.90"><img src="images/scene/10-light4.png" alt="scene layer"/></li>
 								<li class="layer anim light" data-depth="1.00"><img src="images/scene/10-light5.png" alt="scene layer"/></li>
 
+								<li><img id="center-fog" src="images/scene/11-outerBlack.png" alt="scene layer"/></li>
 							</ul><!-- /.scene-->
-
-							<div id="center-fog">
-								<img src="images/scene/11-outerBlack.png" alt="scene layer"/>
-							</div><!-- /#center-fog-->
-							
-						</div><!-- /.scene-overflow-->
 					</div><!-- /.page-inner-->
 				</div><!-- /.page-->
 
@@ -108,13 +107,13 @@
 
 
 			<div class="container">
-				<div class="page bio">
+				<div class="page bio" id="bio">
 					<div class="page-inner">
 					<img class="ornament" src="images/ornament.png" alt="page ornament" />
 
 
 						
-						<h2 id="bio">Bio</h2>
+						<h2>Bio</h2>
 							<p class="two-col"><span class="bold">Liza Jane Catana is a petite singer</span> with a big voice. She hails from Key West, Florida and is known as the knock-it-out-of-the-park soprano with a vocal range of an octave and a half.
 								<br />
 								<span class="line-sep"></span>
@@ -135,14 +134,23 @@
 					</div><!-- /.page-inner-->
 				</div><!-- /.page-->
 
-				<div class="page videos">
+				<div class="page videos" id="videos">
 					<div class="page-inner">
 						<img class="ornament" src="images/ornament.png" alt="page ornament" />
 
 						
-						<h2 id="videos">Videos</h2>
+						<h2>Videos</h2>
 							
 							<div class="video-content">
+
+							<ul class="video-links">
+								<li><a href="http://www.youtube.com/watch?v=cbx63WM5Wus">Song Title</a></li>
+								<li><a href="http://www.youtube.com/watch?v=cbx63WM5Wus">Song Title</a></li>
+								<li><a href="http://www.youtube.com/watch?v=cbx63WM5Wus">Song Title</a></li>
+								<li><a href="http://www.youtube.com/watch?v=cbx63WM5Wus">Song Title</a></li>
+								<li><a href="http://www.youtube.com/watch?v=cbx63WM5Wus">Song Title</a></li>
+								<li><a href="http://www.youtube.com/watch?v=cbx63WM5Wus">Song Title</a></li>
+							</ul>
 
 								<div class="video-wrapper">
 									<iframe src="//www.youtube.com/embed/cbx63WM5Wus" frameborder="0" allowfullscreen></iframe>
@@ -177,12 +185,12 @@
 					</div><!-- /.page-inner-->
 				</div><!-- /.page-->
 
-				<div class="page photos slow-jump">
+				<div class="page photos" id="photos">
 					<div class="page-inner">
 						<img class="ornament" src="images/ornament.png" alt="page ornament" />
 
 						
-						<h2 id="photos">Photos</h2>
+						<h2>Photos</h2>
 
 						<div class='picasa-wrapper'>
 							<img id="prevbtn" src="images/prev.png" alt="previous arrow"/>
@@ -256,8 +264,6 @@
 		<script src="js/jquery.touchwipe.min.js"></script>
 		
 
-
-		<script src="js/jquery.animate-enhanced.min"></script>
 		<script src="js/jquery.event.special.js"></script>
    		<script src="js/jquery.easing.min.js"></script>
   		<script src="js/lightbox-2.6.min.js"></script>
