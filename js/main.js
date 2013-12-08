@@ -1,4 +1,5 @@
 //@codekit-prepend "jquery-1.10.2.min.js"
+//@codekit-prepend "init.js"
 //@codekit-prepend "jquery.parallax.min.js"
 //@codekit-prepend "jquery.event.special.js"
 //@codekit-prepend "jquery.easing.min.js"
@@ -11,25 +12,34 @@ $(function(){
 
 
 
-//hides ugly loading images until all assets have loaded
-$('.scene').hide();
+// //hides ugly loading images until all assets have loaded
+// // $('.scene').hide();
 
-$('.video-wrapper').show();
-$('.video-links').hide();
+// $('.video-wrapper').show();
+// $('.video-links').hide();
 
-$('#main-nav').hide();
+// $('#main-nav').hide();
 
 //------------------------Youtube video handling---------------
-if($(window).width() < 769){
+if($(window).width() > 768){
 
 		//hides youtube videos on mobile devices to increase load time
-		$('.video-wrapper').hide();
-		$('.video-links').show();
+		// $('.video-wrapper').hide();
+		// $('.video-links').show();
 
+		//css chandelier swing
+		swing();
 
+		//fog loop
+		fog_loop();
+
+		//scene animation
+		animate_scene();
+
+		$('#main-nav').show();
 
 	}else{
-		$('#main-nav').show();
+		
 
 	};// if < 769
 
@@ -41,7 +51,7 @@ if($(window).width() < 769){
 		 var toggle = false;
 		
 		$('#menu').on('click', function(e){
-			console.log("clicked menu");
+			
 			if(toggle == false){
 				$('#main-nav').show();
 				toggle = true;
@@ -49,12 +59,16 @@ if($(window).width() < 769){
 				$('#main-nav').hide();
 				toggle = false;
 			};
+
+			e.preventDefault();
 		});
 
-		$('.page').on('click', function(){
-			$('#main-nav').hide();
-			toggle = false;
-		});
+		// $('.page').on('click', function(){
+		// 	$('#main-nav').hide();
+		// 	toggle = false;
+		// });
+
+		
 
 		
 
@@ -175,41 +189,6 @@ $('#scene').parallax({
 
 
 //--------------------------------------------Animation---------------------------------------------
-
-//starts animations once assets have loaded
-$(window).load(function() {
-
-	//shows scene upon load complete
-    $('.scene').show();
-
-	
-
-	//animation runs only on tablet or desktop sized devices
-	if($(window).width() < 769){
-		$('#scene li').removeClass('anim');
-
-		//hides youtube videos on mobile devices to increase load time
-		$('.video-wrapper').hide();
-		$('.video-links').show();
-
-	}else{
-
-		$('.video-wrapper').show();
-		$('.video-links').hide();
-
-		//css chandelier swing
-		swing();
-
-		//fog loop
-		fog_loop();
-
-		//scene animation
-		animate_scene();
-
-	};// if < 769
-});// onload
-
-
 
 
 	function swing(){

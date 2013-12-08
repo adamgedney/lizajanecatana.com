@@ -39,7 +39,7 @@ $dark-red: #490406;
 	float: right;
 	padding: 15px 2% 0;
 	position: relative;
-	z-index: 10000;
+	z-index: 110000;
 }
 
 
@@ -63,9 +63,13 @@ header{
 	}
 
 	nav{
+		position: absolute;
+		width: 100%;
+		z-index: 9999;
 		ul{
 			li{
 				height: 44px;
+				background: $rich-black;
 				border-top: 1px solid $dark-grey;
 				text-align: center;
 
@@ -483,7 +487,6 @@ and (min-width: 580px) {
 @media only screen 
 and (min-width : 750px) {
 
-
 .page:nth-child(odd){
 	background: url(/images/zwartevilt.png) $bg-grey;
 }
@@ -597,6 +600,7 @@ header, footer{
 	}
 
 	nav{
+		position: relative;
 		display: inline-block;
 		float: right;
 		padding-right: 18px;
