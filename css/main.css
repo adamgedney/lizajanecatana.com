@@ -139,11 +139,6 @@ header {
   border-top: 3px solid #490406;
   overflow: hidden;
   background: black;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 99999;
   -webkit-box-shadow: 2px 2px 3px black;
   -moz-box-shadow: 2px 2px 3px black;
   box-shadow: 2px 2px 3px black; }
@@ -173,9 +168,9 @@ header {
 
 /* ----------------Landing page scene----------------*/
 .scene {
-  min-height: 420px;
+  min-height: 330px;
   position: relative;
-  margin-top: 72px;
+  margin-top: 18px;
   margin-bottom: 0; }
   .scene img {
     position: absolute;
@@ -212,7 +207,6 @@ header {
 img#center-fog {
   /*inherits position absolute*/
   width: 100%;
-  bottom: -18;
   left: 0;
   right: 0; }
 
@@ -400,7 +394,7 @@ footer {
 /* Smartphones  ----------- */
 @media only screen and (min-width: 480px) {
   .landing {
-    min-height: 560px; }
+    min-height: 500px; }
 
   #center-fog img {
     height: 100%; }
@@ -430,7 +424,7 @@ footer {
     margin: 0 auto; } }
 @media only screen and (min-width: 580px) {
   .landing {
-    min-height: 660px; }
+    min-height: 600px; }
 
   .chandelier {
     height: auto;
@@ -501,7 +495,14 @@ footer {
 /*min-width 750*/
 @media only screen and (min-width: 769px) {
   .landing {
-    min-height: 760px; }
+    min-height: 730px; }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999; }
 
   header h1, footer h1 {
     float: left; }
@@ -530,6 +531,9 @@ footer {
     display: none; } }
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 837px) {
+  .scene {
+    margin-top: 60px; }
+
   .scene-inner {
     position: absolute;
     height: 720px;
@@ -576,8 +580,16 @@ footer {
       height: 233px; }
   .videos .video-wrapper:nth-child(odd) {
     margin: 0 4%; } }
+@media only screen and (min-width: 960px) {
+  .scene-inner {
+    left: 10%;
+    right: 10%; } }
 /* Desktops ---------------------- */
 @media only screen and (min-width: 1140px) {
+  .scene-inner {
+    left: 15%;
+    right: 15%; }
+
   .videos .video-content {
     width: 990px;
     margin: 0 auto; }
