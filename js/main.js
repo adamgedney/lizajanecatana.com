@@ -68,8 +68,8 @@ if($(window).width() < 769){
 
 //------------------------------------------Picasa album slideshow----------------------------------
 
-var username = '112323008573640601447';
-var album = 'MobLive';
+var username = 'lizadivacatana';//gmail address less the @gmail.com
+var album = 'WebsiteAlbum';//make sure album is set to public throught the "share with" options
 var protocol = document.location.protocol == 'http:' ? 'http:' : 'https:';
 var url = protocol + '//picasaweb.google.com/data/feed/api/user/' + username + '/album/' + album + '?kind=photo&alt=json';
 
