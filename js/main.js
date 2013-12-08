@@ -41,7 +41,7 @@ if($(window).width() < 769){
 		 var toggle = false;
 		
 		$('#menu').on('click', function(e){
-			
+			console.log("clicked menu");
 			if(toggle == false){
 				$('#main-nav').show();
 				toggle = true;
