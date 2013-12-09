@@ -29,7 +29,7 @@
 	<link rel="stylesheet" href="css/main.css" />
 
 	<!-- php adaptive images plugin-->
-	<script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
+	<!-- <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script> -->
 
 
 	<script src="js/modernizr.custom.30046.js"></script>
@@ -45,7 +45,7 @@
 			<a href="#"><h1>Liza Jane Catana</h1></a>
 
 			<!-- mobile menu button. Displays only on small screens -->
-			<a class="menu-button" id="menu" href="#" ><img src="images/menu.png" alt="menu button"/></a>
+			<a class="menu-button" id="menu" href="#" ><img src="images/menu.png" alt="menu button" title="Main Menu"/></a>
 
 			<nav id="main-nav">
 				<ul>
