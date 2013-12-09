@@ -19,6 +19,7 @@ font: 62.5% "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Hel
 h1,h2,h3,h4, nav, .video-links{
 font-family: 'Tangerine', cursive;
 color: $light-grey;
+-webkit-font-smoothing: antialiased;
 }
 
 h1{

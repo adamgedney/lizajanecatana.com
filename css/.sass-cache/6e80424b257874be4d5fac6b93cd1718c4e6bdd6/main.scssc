@@ -1,7 +1,7 @@
 3.2.9 (Media Mark)
-12ecbc60b7d3144cf2c857dd0dd655dee4a58167
+f31282a28ba0137f8909a12c5abbcf5c822c4dd3
 o:Sass::Tree::RootNode
-:@template"Ó'/* 	Copyright Adam Gedney 12/2/13
+:@template"Ô'/* 	Copyright Adam Gedney 12/2/13
 	contact: adam.gedney@gmail.com
 	http://adamgedney.com
 
@@ -42,7 +42,7 @@ $dark-red: #490406;
 	float: right;
 	padding: 15px 2% 0;
 	position: relative;
-	z-index: 110000;
+	z-index: 1110000;
 }
 
 
@@ -839,7 +839,7 @@ reset;io;;0;0;[ ;@;"defaults;i o;
 ;[ ;[">/*-----------------------Styles------------------------*/;@;i(o:Sass::Tree::RuleNode:
 @tabsi ;[o:Sass::Tree::PropNode;i ;["display;[ ;o:Sass::Script::String;	:identifier;"inline-block;@;@;i*:@prop_syntax:newo;;i ;["opacity;[ ;o;;	;;".8;@;@;i+; ;!o;;i ;["
 float;[ ;o;;	;;"
-right;@;@;i,; ;!o;;i ;["padding;[ ;o;;	;;"15px 2% 0;@;@;i-; ;!o;;i ;["position;[ ;o;;	;;"relative;@;@;i.; ;!o;;i ;["z-index;[ ;o;;	;;"110000;@;@;i/; ;!;@:
+right;@;@;i,; ;!o;;i ;["padding;[ ;o;;	;;"15px 2% 0;@;@;i-; ;!o;;i ;["position;[ ;o;;	;;"relative;@;@;i.; ;!o;;i ;["z-index;[ ;o;;	;;"1110000;@;@;i/; ;!;@:
 @rule[".menu-button;i):@parsed_ruleso:"Sass::Selector::CommaSequence:@filename" ;i):@members[o:Sass::Selector::Sequence;&[o:#Sass::Selector::SimpleSequence
 :@subject0;%@ƒ:@sourceso:Set:
 @hash{ ;i);&[o:Sass::Selector::Class;["menu-button;%@ƒ;i):@has_childrenTo;;i ;[o;;i ;["border-top;[ ;o:Sass::Script::List	:@separator:

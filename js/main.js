@@ -12,20 +12,9 @@ $(function(){
 
 
 
-// //hides ugly loading images until all assets have loaded
-// // $('.scene').hide();
-
-// $('.video-wrapper').show();
-// $('.video-links').hide();
-
-// $('#main-nav').hide();
-
 //------------------------Youtube video handling---------------
 if($(window).width() > 768){
 
-		//hides youtube videos on mobile devices to increase load time
-		// $('.video-wrapper').hide();
-		// $('.video-links').show();
 
 		//css chandelier swing
 		swing();
@@ -37,9 +26,6 @@ if($(window).width() > 768){
 		animate_scene();
 
 		$('#main-nav').show();
-
-	}else{
-		
 
 	};// if < 769
 
@@ -53,11 +39,15 @@ if($(window).width() > 768){
 		$('#menu').on('click', function(e){
 			
 			if(toggle == false){
+
 				$('#main-nav').show();
 				toggle = true;
+
 			}else{
+
 				$('#main-nav').hide();
 				toggle = false;
+				
 			};
 
 			e.preventDefault();
