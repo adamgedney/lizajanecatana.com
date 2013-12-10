@@ -274,18 +274,18 @@
 						<form action="?action=contact" method="post">
 
 							<label for="name">Name*</label>
-							<input type="text" name="name" placeholder="Full Name" required/>
+							<input type="text" id="con-name" name="name" placeholder="Full Name" required/>
 
 							<label for="email">Email*</label>
-							<input type="email" name="email" placeholder="you@example.com" required/>
+							<input type="email" id="con-email" name="email" placeholder="you@example.com" required/>
 
 							<label for="phone">Phone*</label>
-							<input type="tel" name="phone" placeholder="555-555-1212" required/>
+							<input type="tel" id="con-phone" name="phone" placeholder="555-555-1212" required/>
 
 							<label for="message">Message*</label>
-							<textarea name="message" required></textarea>
+							<textarea id="con-message" name="message" required></textarea>
 
-							<input type="submit" value="Contact Me" />
+							<input id="submit-btn" type="submit" value="Contact Me" />
 
 						</form>
 					</div><!-- /.form-->
