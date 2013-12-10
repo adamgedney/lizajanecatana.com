@@ -11,9 +11,12 @@
 $(function(){
 
 
+ 
+//------------------------Animation query handling---------------
+// $(window).resize(function(){
+// 	console.log('resize' , $(window).width())
 
-//------------------------Youtube video handling---------------
-if($(window).width() > 768){
+	if($(window).width() >= 749){
 
 
 		//css chandelier swing
@@ -27,8 +30,15 @@ if($(window).width() > 768){
 
 		$('#main-nav').show();
 
-	};// if < 769
+	}else{
 
+		$('.swing').stop();
+		$('#inner-fog').stop();
+		$('#scene li.anim').stop();
+		$('#scene li.light').stop();
+
+	};// if < 769
+// });// resize
 
 
 //---------------------drop down menu------------------------

@@ -1,6 +1,6 @@
-<?php require_once 'controllers/mailer.php'; ?> <!-- form controller. Could have used Ajax. I know ;) -->
 <!DOCTYPE html>
 <html lang="en">
+<head>
 <!-- Thanks for checking out my code!!
 
 	Copyright Adam Gedney 12/4/13
@@ -9,7 +9,7 @@
 
 "Good UI design is humble.” – Jono DiCarlo -->
 
-<head>
+
 	<title>Liza Jane Catana</title>
 
 	<!-- meta -->
@@ -21,7 +21,6 @@
 	<link rel="shortcut icon" href="http://adamshields.com/favicon.ico" />
 
 	<!-- Google fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
 	
 
@@ -32,12 +31,15 @@
 	<!-- <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script> -->
 
 
-	<script src="js/modernizr.custom.30046.js"></script>
+	<!-- <script src="js/modernizr.custom.30046.js"></script> -->
 
 
 
 
 </head>
+
+<?php require_once 'controllers/mailer.php'; ?> <!-- form controller. Could have used Ajax. I know ;) -->
+
 	<body>
 		<header>
 
@@ -45,7 +47,7 @@
 			<a href="#"><h1>Liza Jane Catana</h1></a>
 
 			<!-- mobile menu button. Displays only on small screens -->
-			<a class="menu-button" id="menu" href="#" ><img src="images/menu.png" alt="menu button" title="Main Menu"/></a>
+			<a class="menu-button" id="menu" href="#" ><img src="images/menu.png" alt="menu button" title="Main Menu"  width="25" height="25"/></a>
 
 			<nav id="main-nav">
 				<ul>
@@ -72,8 +74,8 @@
 					<ul class="scene" id="scene">
 
 						<!-- rear fog -->
-						<li class="layer anim" data-depth="0.20"><img id="fog-right" src="images/scene/4-rightInnerFog.png" alt="scene layer"/></li>
-						<li class="layer anim" data-depth="0.50"><img id="fog-left" src="images/scene/5-leftInnerFog.png" alt="scene layer"/></li>
+						<li class="layer anim" data-depth="0.20"><img id="fog-right" src="images/scene/4-rightInnerFog.png" alt="scene layer" width="862" height="620"/></li>
+						<li class="layer anim" data-depth="0.50"><img id="fog-left" src="images/scene/5-leftInnerFog.png" alt="scene layer" width="862" height="620"/></li>
 						
 
 
@@ -81,39 +83,39 @@
 								
 
 								<!-- chandeleir & rear curtain -->
-								<li class="layer" data-depth="0.10"><img src="images/scene/1-rearCurtain.png" alt="scene layer"/></li>
-								<li class="chandelier swing" data-depth="0.20"><img src="images/scene/3-chand.png" alt="scene layer"/></li>
+								<li class="layer" data-depth="0.10"><img src="images/scene/1-rearCurtain.png" alt="scene layer" width="862" height="620"/></li>
+								<li class="chandelier swing" data-depth="0.20"><img src="images/scene/3-chand.png" alt="scene layer" width="862" height="620"/></li>
 								
 
 								<!-- singer & singer shadow -->
-								<li class="layer anim" data-depth="0.35"><img src="images/scene/6-singerShadow.png" alt="scene layer"/></li>
-								<li class="layer" data-limit-y="2" data-depth="0.00"><img src="images/scene/7-singer.png" alt="scene layer"/></li>
+								<li class="layer anim" data-depth="0.35"><img src="images/scene/6-singerShadow.png" alt="scene layer" width="862" height="620"/></li>
+								<li class="layer" data-limit-y="2" data-depth="0.00"><img src="images/scene/7-singer.png" alt="scene layer" width="862" height="620"/></li>
 							</div><!-- /.scene-inner-->
 
 
 							<!-- left/right curtains -->
 							<div id="curtain-wrapper">
-								<img id="curtain-left" src="images/scene/8a-curtainLeft.png" alt="scene layer"/>
+								<img id="curtain-left" src="images/scene/8a-curtainLeft.png" alt="scene layer" width="436" height="620"/>
 									<div id="curtain-center"></div>
-								<img id="curtain-right" src="images/scene/8b-curtainRight.png" alt="scene layer"/>
+								<img id="curtain-right" src="images/scene/8b-curtainRight.png" alt="scene layer" width="436" height="620"/>
 							</div><!-- /#curtain-wrapper-->
 
 
 						<!-- center & looping fog  -->
-						<li class="layer" data-depth="0.75"><img id="inner-fog" src="images/scene/5a-innerFog.png" alt="scene layer"/></li>
-						<li class="layer anim" data-depth="1.00"><img id="center-fog" src="images/scene/9-outerFog.png" alt="scene layer"/></li>
+						<li class="layer" data-depth="0.75"><img id="inner-fog" src="images/scene/5a-innerFog.png" alt="scene layer" width="862" height="620"/></li>
+						<li class="layer anim" data-depth="1.00"><img id="center-fog" src="images/scene/9-outerFog.png" alt="scene layer" width="862" height="620"/></li>
 
 
 						<!-- lighting effects-->
-						<li class="layer anim light" data-depth="0.60"><img src="images/scene/10-light1.png" alt="scene layer"/></li>
-						<li class="layer anim light" data-depth="0.70"><img src="images/scene/10-light2.png" alt="scene layer"/></li>
-						<li class="layer anim light" data-depth="0.80"><img src="images/scene/10-light3.png" alt="scene layer"/></li>
-						<li class="layer anim light" data-depth="0.90"><img src="images/scene/10-light4.png" alt="scene layer"/></li>
-						<li class="layer anim light" data-depth="1.00"><img src="images/scene/10-light5.png" alt="scene layer"/></li>
+						<li class="layer anim light" data-depth="0.60"><img src="images/scene/10-light1.png" alt="scene layer" width="862" height="620"/></li>
+						<li class="layer anim light" data-depth="0.70"><img src="images/scene/10-light2.png" alt="scene layer" width="862" height="620"/></li>
+						<li class="layer anim light" data-depth="0.80"><img src="images/scene/10-light3.png" alt="scene layer" width="862" height="620"/></li>
+						<li class="layer anim light" data-depth="0.90"><img src="images/scene/10-light4.png" alt="scene layer" width="862" height="620"/></li>
+						<li class="layer anim light" data-depth="1.00"><img src="images/scene/10-light5.png" alt="scene layer" width="862" height="620"/></li>
 
 
 						<!-- masking black fog -->
-						<li><img id="center-fog" src="images/scene/11-outerBlack.png" alt="scene layer"/></li>
+						<li><img id="center-fog" src="images/scene/11-outerBlack.png" alt="scene layer" width="862" height="620"/></li>
 					
 					</ul><!-- /.scene-->
 				</div><!-- /.page-inner-->
@@ -132,7 +134,7 @@
 			<div class="page bio" id="bio">
 				<div class="page-inner">
 
-				<img class="ornament" src="images/ornament.png" alt="page ornament" />
+				<img class="ornament" src="images/ornament.png" alt="page ornament" width="150" height="19" />
 
 					<h2>Bio</h2>
 						<p class="two-col"><span class="bold">Liza Jane Catana is a petite singer</span> with a big voice. She hails from Key West, Florida and is known as the knock-it-out-of-the-park soprano with a vocal range of an octave and a half.
@@ -167,7 +169,7 @@
 			<div class="page videos" id="videos">
 				<div class="page-inner">
 					
-					<img class="ornament" src="images/ornament.png" alt="page ornament" />
+					<img class="ornament" src="images/ornament.png" alt="page ornament" width="150" height="19" />
 
 					<h2>Videos</h2>
 					
@@ -233,15 +235,15 @@
 			<div class="page photos" id="photos">
 				<div class="page-inner">
 
-					<img class="ornament" src="images/ornament.png" alt="page ornament" />
+					<img class="ornament" src="images/ornament.png" alt="page ornament" width="150" height="19"/>
 
 					<h2>Photos</h2>
 
 					<!-- slideshow wrapper -->
 					<div class='picasa-wrapper'>
 
-						<img id="prevbtn" src="images/prev.png" alt="previous arrow"/>
-						<img id="nextbtn" src="images/next.png" alt="next arrow"/>
+						<img id="prevbtn" src="images/prev.png" alt="previous arrow" width="50" height="45"/>
+						<img id="nextbtn" src="images/next.png" alt="next arrow" width="50" height="45"/>
 
 							<!-- slideshow inserted via JS into this div _see main.js -->
 							<div class='picasagallery'>
@@ -263,7 +265,7 @@
 			<!-- contact page -->
 			<div class="page contact slow-jump">
 				<div class="page-inner cf">
-					<img class="ornament" src="images/ornament.png" alt="page ornament" />
+					<img class="ornament" src="images/ornament.png" alt="page ornament" width="150" height="19"/>
 
 					<h2 id="contact">Contact</h2>
 
