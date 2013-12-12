@@ -178,45 +178,45 @@
 
 						<!-- <ul> displays only on small screens to optimize load times & limit data. Copy youtube video links here. -->
 						<ul class="video-links">
-							<li><a href="http://www.youtube.com/watch?v=cbx63WM5Wus">Song Title</a></li>
-							<li><a href="http://www.youtube.com/watch?v=cbx63WM5Wus">Song Title</a></li>
-							<li><a href="http://www.youtube.com/watch?v=cbx63WM5Wus">Song Title</a></li>
-							<li><a href="http://www.youtube.com/watch?v=cbx63WM5Wus">Song Title</a></li>
-							<li><a href="http://www.youtube.com/watch?v=cbx63WM5Wus">Song Title</a></li>
-							<li><a href="http://www.youtube.com/watch?v=cbx63WM5Wus">Song Title</a></li>
+							<li><a href="http://www.youtube.com/watch?v=M5qHnS8fYZ4">Wishing You Were Somehow Here Again</a></li>
+							<li><a href="http://www.youtube.com/watch?v=5CuSnlchbeU">Back To Black (Amy Winehouse)</a></li>
+							<li><a href="http://www.youtube.com/watch?v=bPCk2HsjuhE">The National Anthem</a></li>
+							<li><a href="http://www.youtube.com/watch?v=nvHT0w0YPKQ">Someone Like You (Adele)</a></li>
+							<li><a href="http://www.youtube.com/watch?v=jzlL5ykIx2M">Pie Jesu</a></li>
+							<li><a href="http://www.youtube.com/watch?v=08DTWh83UA8">Bridge Over Troubled Water</a></li>
 						</ul>
 
 
 
 						<!-- youtube videos -->
 						<div class="video-wrapper">
-							<iframe src="//www.youtube.com/embed/cbx63WM5Wus" frameborder="0" allowfullscreen></iframe>
-							<h3>Song Title</h3>
+							<iframe src="//www.youtube.com/embed/M5qHnS8fYZ4" frameborder="0" allowfullscreen></iframe>
+							<h3>Wishing You Were Somehow Here Again</h3>
 						</div><!-- /.video-wrapper-->
 
 						<div class="video-wrapper">
-							<iframe src="//www.youtube.com/embed/cbx63WM5Wus" frameborder="0" allowfullscreen></iframe>
-							<h3>Song Title</h3>
+							<iframe src="//www.youtube.com/embed/5CuSnlchbeU" frameborder="0" allowfullscreen></iframe>
+							<h3>Back To Black (Amy Winehouse)</h3>
 						</div><!-- /.video-wrapper-->
 
 						<div class="video-wrapper">
-							<iframe src="//www.youtube.com/embed/cbx63WM5Wus" frameborder="0" allowfullscreen></iframe>
-							<h3>Song Title</h3>
+							<iframe src="//www.youtube.com/embed/bPCk2HsjuhE" frameborder="0" allowfullscreen></iframe>
+							<h3>The National Anthem</h3>
 						</div><!-- /.video-wrapper-->
 
 						<div class="video-wrapper">
-							<iframe src="//www.youtube.com/embed/cbx63WM5Wus" frameborder="0" allowfullscreen></iframe>
-							<h3>Song Title</h3>
+							<iframe src="//www.youtube.com/embed/nvHT0w0YPKQ" frameborder="0" allowfullscreen></iframe>
+							<h3>Someone Like You (Adele)</h3>
 						</div><!-- /.video-wrapper-->
 
 						<div class="video-wrapper">
-							<iframe src="//www.youtube.com/embed/cbx63WM5Wus" frameborder="0" allowfullscreen></iframe>
-							<h3>Song Title</h3>
+							<iframe src="//www.youtube.com/embed/jzlL5ykIx2M" frameborder="0" allowfullscreen></iframe>
+							<h3>Pie Jesu</h3>
 						</div><!-- /.video-wrapper-->
 
 						<div class="video-wrapper">
-							<iframe src="//www.youtube.com/embed/cbx63WM5Wus" frameborder="0" allowfullscreen></iframe>
-							<h3>Song Title</h3>
+							<iframe src="//www.youtube.com/embed/08DTWh83UA8" frameborder="0" allowfullscreen></iframe>
+							<h3>Bridge Over Troubled Water</h3>
 						</div><!-- /.video-wrapper-->
 					</div><!-- /.video-content-->	
 				</div><!-- /.page-inner-->
