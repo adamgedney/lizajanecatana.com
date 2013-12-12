@@ -210,8 +210,19 @@ $('#scene').parallax({
 		});
 	};// fog_loop()
 
-
-
+	flicker();
+	var on = true;
+	function flicker(){
+		if(on){
+			$('#flicker').hide();
+			on = false;
+		}else{
+			$('#flicker').show();
+			on = true;
+		};
+		
+		setTimeout(flicker, 50);
+	};
 
 
 	function animate_scene(){

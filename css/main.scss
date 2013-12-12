@@ -163,8 +163,8 @@ img#center-fog{
 	margin: -120px auto 0; //negative margin used to make rotation of div
 	position: absolute;
 	top: 0;
-
 }
+
 
 //css swing taken from
 //http://iamdavesmith.com/swinging-an-element-using-css3-transitions-and-a-smidgen-of-jquery/
@@ -174,10 +174,10 @@ img#center-fog{
 	-o-transition: all 5s ease-in-out;
 	-ms-transition: all 5s ease-in-out;
 	transition: all 5s ease-in-out;
-	-moz-transform:rotate(4deg);
-	-webkit-transform:rotate(4deg);
-	-o-transform:rotate(4deg);
-	-ms-transform:rotate(4deg);
+	-moz-transform:rotate(3deg);
+	-webkit-transform:rotate(3deg);
+	-o-transform:rotate(3deg);
+	-ms-transform:rotate(3deg);
 }
  
 .right {
