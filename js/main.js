@@ -16,7 +16,7 @@ $(function(){
 // $(window).resize(function(){
 // 	console.log('resize' , $(window).width())
 
-	if($(window).width() >= 749){
+	// if($(window).width() >= 549){
 
 
 		//css chandelier swing
@@ -30,14 +30,14 @@ $(function(){
 
 		$('#main-nav').show();
 
-	}else{
+	// }else{
 
-		$('.swing').stop();
-		$('#inner-fog').stop();
-		$('#scene li.anim').stop();
-		$('#scene li.light').stop();
+	// 	$('.swing').stop();
+	// 	$('#inner-fog').stop();
+	// 	$('#scene li.anim').stop();
+	// 	$('#scene li.light').stop();
 
-	};// if < 769
+	// };// if < 769
 // });// resize
 
 

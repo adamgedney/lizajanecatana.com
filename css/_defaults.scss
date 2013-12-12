@@ -20,6 +20,7 @@ h1,h2,h3,h4, nav, .video-links{
 font-family: 'Tangerine', cursive;
 color: $light-grey;
 -webkit-font-smoothing: antialiased;
+text-shadow: 1px 1px 1px rgba(255,255,255,0.4);
 }
 
 h1{
@@ -30,7 +31,7 @@ line-height: 1.5em;
 h2{
 font-size: 4.2em;
 line-height: 1.5em;
-text-shadow: 1px 1px 1px rgba(255,255,255,0.4);
+
 }
 
 h3{

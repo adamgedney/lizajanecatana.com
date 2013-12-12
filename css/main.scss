@@ -56,7 +56,7 @@ header{
 	h1{
 		display: inline-block;
 		text-align: center;
-		font-size: 4.2em;
+		font-size: 4.8em;
 		padding-left: 2%;
 		color: $white;
 		line-height: 63px;
@@ -67,6 +67,8 @@ header{
 		width: 100%;
 		z-index: 9999;
 		ul{
+			margin-bottom: 0;
+
 			li{
 				height: 44px;
 				background: $rich-black;
@@ -94,7 +96,6 @@ header{
 	
 	.page-inner{
 		padding: 0;
-
 	}
 }
 
@@ -116,7 +117,7 @@ header{
 }
 
 .rear-curtain{
-	z-index: -9999;
+	z-index: -99999;
 }
 
 #curtain-wrapper{
@@ -173,10 +174,10 @@ img#center-fog{
 	-o-transition: all 5s ease-in-out;
 	-ms-transition: all 5s ease-in-out;
 	transition: all 5s ease-in-out;
-	-moz-transform:rotate(2deg);
-	-webkit-transform:rotate(2deg);
-	-o-transform:rotate(2deg);
-	-ms-transform:rotate(2deg);
+	-moz-transform:rotate(4deg);
+	-webkit-transform:rotate(4deg);
+	-o-transform:rotate(4deg);
+	-ms-transform:rotate(4deg);
 }
  
 .right {
