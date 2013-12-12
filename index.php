@@ -116,7 +116,7 @@
 
 
 						<!-- masking black fog -->
-						<li><img id="center-fog" src="images/scene/11-outerBlack.png" alt="scene layer" width="862" height="620"/></li>
+						<!-- <li><img id="center-fog" src="images/scene/11-outerBlack.png" alt="scene layer" width="862" height="620"/></li> -->
 					
 					</ul><!-- /.scene-->
 				</div><!-- /.page-inner-->
