@@ -115,6 +115,10 @@ header{
 	}
 }
 
+.rear-curtain{
+	z-index: -9999;
+}
+
 #curtain-wrapper{
 	width: 100%;
 	min-width: 837px;

@@ -83,7 +83,7 @@
 								
 
 								<!-- chandeleir & rear curtain -->
-								<li class="layer" data-depth="0.10"><img src="images/scene/1-rearCurtain.png" alt="scene layer" width="862" height="620"/></li>
+								<li class="layer rear-curtain" data-depth="0.10"><img src="images/scene/1-rearCurtain.jpg" alt="scene layer" width="862" height="620"/></li>
 								<li class="chandelier swing" data-depth="0.20"><img src="images/scene/3-chand.png" alt="scene layer" width="862" height="620"/></li>
 								
 
