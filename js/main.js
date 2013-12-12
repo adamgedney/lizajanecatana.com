@@ -25,6 +25,9 @@ $(function(){
 		//fog loop
 		fog_loop();
 
+		//chandeleir flicker
+		flicker();
+
 		//scene animation
 		animate_scene();
 
@@ -210,9 +213,18 @@ $('#scene').parallax({
 		});
 	};// fog_loop()
 
-	flicker();
+
+
+
+	//chandeleir flicker controller
 	var on = true;
 	function flicker(){
+
+		//time controls setTimeout retrigger time. Mimics random flickering
+		var time = [40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140];
+		var index = Math.floor(Math.random() * time.length);
+		var current_time = time[index];
+
 		if(on){
 			$('#flicker').hide();
 			on = false;
@@ -221,8 +233,11 @@ $('#scene').parallax({
 			on = true;
 		};
 		
-		setTimeout(flicker, 50);
+		setTimeout(flicker, current_time);
 	};
+
+
+
 
 
 	function animate_scene(){
