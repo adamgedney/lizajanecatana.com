@@ -31,8 +31,6 @@ $(function(){
 		//scene animation
 		animate_scene();
 
-		$('#main-nav').show();
-
 	// }else{
 
 	// 	$('.swing').stop();
