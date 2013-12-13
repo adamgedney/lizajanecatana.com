@@ -71,7 +71,8 @@
 			<!-- landing page -->
 			<div class="page landing">
 				<div class="page-inner">
-					<ul class="scene" id="scene">
+					<ul class="scene" id="scene" 
+						>
 
 						<!-- rear fog -->
 						<li class="layer anim" data-depth="0.20"><img id="fog-right" src="images/scene/4-rightInnerFog.png" alt="scene layer" width="862" height="620"/></li>

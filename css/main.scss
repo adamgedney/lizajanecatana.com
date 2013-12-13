@@ -117,7 +117,8 @@ header{
 }
 
 .rear-curtain{
-	z-index: -99999;
+	position: relative;
+	z-index: -999999;
 }
 
 #curtain-wrapper{
