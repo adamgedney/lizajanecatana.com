@@ -10,14 +10,18 @@
 //namespace
 $(function(){
 
+// $('.video-wrapper').show();
+// $('.video-links').hide();
 
+$('#main-nav').hide();
  
 //------------------------Animation query handling---------------
 // $(window).resize(function(){
 // 	console.log('resize' , $(window).width())
 
-	// if($(window).width() >= 549){
+	if($(window).width() >= 549){
 
+		$('#main-nav').show();
 
 		//css chandelier swing
 		swing();
@@ -31,14 +35,14 @@ $(function(){
 		//scene animation
 		animate_scene();
 
-	// }else{
+	}else{
 
 	// 	$('.swing').stop();
 	// 	$('#inner-fog').stop();
 	// 	$('#scene li.anim').stop();
 	// 	$('#scene li.light').stop();
 
-	// };// if < 769
+	};// if < 769
 // });// resize
 
 
@@ -47,7 +51,7 @@ $(function(){
 		 
 		 var toggle = false;
 		
-		$('#menu').on('click', function(e){
+		$('#menu').on('mousedown', function(e){
 			
 			if(toggle == false){
 
