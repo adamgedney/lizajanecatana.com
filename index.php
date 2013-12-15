@@ -40,7 +40,8 @@
 
 <?php require_once 'controllers/mailer.php'; ?> <!-- form controller. Could have used Ajax. I know ;) -->
 
-	<body> <!-- heres is a comment on line 43 -->
+	<body> 
+	<!-- heres is a comment on line 43 -->
 	<!-- this comment's on line 44 -->
 		<header>
 
