@@ -40,7 +40,7 @@
 
 <?php require_once 'controllers/mailer.php'; ?> <!-- form controller. Could have used Ajax. I know ;) -->
 
-	<body> 
+	<body><!--comment biotch-->
 		<header>
 
 			<!-- "logo" -->
