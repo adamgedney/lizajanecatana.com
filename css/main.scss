@@ -316,11 +316,15 @@ ul.video-links li a{
 	clear: both;
 	width: 280px;
 	margin: 0 auto;
+	text-align: center;
 
 	.pic{
-		width: 245px;
-		display: inline-block;
-		text-align: center;
+		// width: 245px;
+		max-width: 280px;
+		max-height: 400px;
+		display: block;
+		margin: 0 auto;
+		border-radius: 2px;
 	}
 
 }
