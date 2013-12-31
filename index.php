@@ -4,8 +4,6 @@
 <!-- Thanks for checking out my code!!
 
 	Copyright Adam Gedney 12/4/13
-	contact: adam.gedney@gmail.com
-	http://adamgedney.com
 
 "Good UI design is humble.” – Jono DiCarlo -->
 
@@ -156,7 +154,7 @@
 						<span class="bold">Classically trained on the piano</span> and self-taught guitar player, Liza writes her own songs and has recorded in New York City with Clinton Curtis at Threshold Studios. Some of her original works have been broadcast on local radio stations. 
 							<br />
 							<span class="line-sep"></span>
-						<span class="bold">Liza performs locally with a group of stunning female singers called "The Ivories".</span> They have performed at the Ocean Key House, Schooner Wharf, Sloppy Joe's, The Little White House and even opened up for Three Dog Night singing the National Anthem in February of 2013 during Keys Stock. The Ivories have recorded a Christmas album which will be available in December 2013.</p>
+						<span class="bold">Liza performs locally with a group of stunning female singers called "The Ivory's".</span> They have performed at the Ocean Key House, Schooner Wharf, Sloppy Joe's, The Little White House and even opened up for Three Dog Night singing the National Anthem in February of 2013 during Keys Stock. The Ivories have recorded a Christmas album which will be available in December 2013.</p>
 				</div><!-- /.page-inner-->
 			</div><!-- /.page-->
 
